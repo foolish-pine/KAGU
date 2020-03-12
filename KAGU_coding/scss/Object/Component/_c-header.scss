@@ -1,0 +1,27 @@
+/* ===================================================================
+  ヘッダーコンポーネント
+   =================================================================== */
+
+@import '../../Utility/u-color';
+
+.c-header {
+
+  &__nav {
+    font-size: 1.25rem;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    font-weight: 600;
+    text-decoration: none;
+    color: $color-header-link;
+
+    &:hover {
+      color: $color-header-link-hover;
+    }
+  }
+}
