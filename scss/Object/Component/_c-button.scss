@@ -19,11 +19,5 @@
     letter-spacing: .1em;
     color: $color-button-text;
     transition: all 0.4s;
-
-    &:hover {
-      color: #fff;
-      background-color: $color-button-hover;
-      transition: all 0.4s;
-    }
   }
 }

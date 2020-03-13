@@ -34,6 +34,7 @@
   &__twoColumnsContainer {
     display: grid;
     margin-bottom: 80px;
+
     gap: 80px 60px;
     grid-template-columns: 1fr 1fr;
   }
@@ -61,9 +62,20 @@
     }
   }
 
+  &__twoColumnsButton {
+    a {
+      &:hover {
+        transition: all .4s;
+        color: #fff;
+        background-color: $color-button-hover;
+      }
+    }
+  }
+
   &__threeColumns {
     display: grid;
     margin-bottom: 79px;
+
     gap: 70px;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -90,5 +102,13 @@
 
   &__threeColumnsButton {
     margin: 0 auto;
+
+    a {
+      &:hover {
+        transition: all .4s;
+        color: #fff;
+        background-color: $color-button-hover;
+      }
+    }
   }
 }

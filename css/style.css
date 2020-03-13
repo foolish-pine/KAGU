@@ -345,13 +345,6 @@ img {
   transition: all 0.4s;
 }
 
-.c-button a:hover {
-  color: #fff;
-  background-color: #333;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
 /* Project
    ------------------------------------------------------------------ */
 /* ===================================================================
@@ -572,6 +565,13 @@ img {
   margin: 0 auto;
 }
 
+.p-news__button a:hover {
+  color: #fff;
+  background-color: #333;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 /* ===================================================================
   取り扱い家具
    =================================================================== */
@@ -637,6 +637,13 @@ img {
   margin-bottom: 55px;
 }
 
+.p-furniture__twoColumnsButton a:hover {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: #fff;
+  background-color: #333;
+}
+
 .p-furniture__threeColumns {
   display: -ms-grid;
   display: grid;
@@ -668,6 +675,13 @@ img {
 
 .p-furniture__threeColumnsButton {
   margin: 0 auto;
+}
+
+.p-furniture__threeColumnsButton a:hover {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: #fff;
+  background-color: #333;
 }
 
 /* ===================================================================
@@ -730,4 +744,55 @@ img {
 .p-shop__link::after {
   content: url(/image/arrow.png);
   margin-left: 8px;
+}
+
+/* ===================================================================
+  採用情報
+   =================================================================== */
+.p-recruit {
+  width: 1500px;
+  height: 430px;
+  margin: 0 auto;
+  padding: 80px 0 0;
+  text-align: center;
+  background-image: url(/image/bg_recruit.jpg);
+}
+
+.p-recruit__title {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 43px;
+  text-align: center;
+  letter-spacing: .15em;
+  color: #fff;
+}
+
+.p-recruit__title span {
+  font-family: 'Quicksand';
+  font-size: .94rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 17px;
+  letter-spacing: .05em;
+  color: #fff;
+}
+
+.p-recruit__text p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 54px;
+  letter-spacing: .2em;
+  color: #fff;
+}
+
+.p-recruit__button {
+  margin: 0 auto;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.p-recruit__button a {
+  font-size: .875rem;
+  color: #fff;
 }
