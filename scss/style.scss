@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+/* ===================================================================
+  パーシャルファイルインポート
+   =================================================================== */
+
+/* Foundation
+   ------------------------------------------------------------------ */
+@import 
+'Foundation/reset',
+'Foundation/base',
+'Foundation/mediaquery'
+;
+
+/* Utility
+   ------------------------------------------------------------------ */
+@import
+'Utility/u-color'
+;
+
+/* Layout
+   ------------------------------------------------------------------ */
+@import 
+'Layout/l-header',
+'Layout/l-main',
+'Layout/l-footer'
+;
+
+/* Component
+   ------------------------------------------------------------------ */
+@import 
+// 'Object/Component/c-header',
+// 'Object/Component/c-text',
+'Object/Component/c-button'
+// 'Object/Component/c-footer'
+;
+
+/* Project
+   ------------------------------------------------------------------ */
+@import 
+'Object/Project/p-header',
+'Object/Project/p-mainVisual',
+'Object/Project/p-news',
+'Object/Project/p-furniture',
+'Object/Project/p-shop',
+'Object/Project/p-footer'
+;
+

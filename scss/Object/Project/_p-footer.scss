@@ -1,0 +1,64 @@
+// /* ===================================================================
+//   フッター
+//    =================================================================== */
+
+// .p-footer {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 1140px;
+//   margin: 0 auto;
+//   padding: 30px 0px 22px 0px;
+
+//   @include sp {
+//     width: 100%;
+//     justify-content: center;
+//     padding: 28px 21px;
+//   }
+
+//   &__list {
+
+//     @include sp {
+//       width: 242px;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       margin-bottom: 3px;
+//     }
+//   }
+
+//   &__item {
+//     line-height: 18px;
+//     display: inline;
+//     padding: 0 16px;
+//     border-right: 1px solid #3c3c3c;
+
+//     @include sp {
+//       font-size: .625rem;
+//       white-space: nowrap;
+//       padding: 0 10px;
+//     }
+//   }
+
+//   &__item:first-child {
+//     padding-left: 0;
+//   }
+
+
+//   &__item:last-child {
+//     border: none;
+//   }
+
+//   &__logo {
+
+//     @include sp {
+//       display: none;
+//     }
+//   }
+
+//   &__copyright {
+//     color: $color-text-footer;
+//     font-size: .625rem;
+//     text-align: center;
+
+//   }
+// }

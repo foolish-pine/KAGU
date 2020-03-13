@@ -1,0 +1,29 @@
+/* ===================================================================
+  ボタンコンポーネント
+   =================================================================== */
+
+.c-button {
+  line-height: 53px;
+  width: 220px;
+  height: 53px;
+  text-align: center;
+  border: 2px solid $color-button-border;
+  background-color: #fff;
+
+  a {
+    font-size: .94rem;
+    font-weight: 700;
+    line-height: 49px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: $color-button-text;
+    transition: all 0.4s;
+
+    &:hover {
+      color: #fff;
+      background-color: $color-button-hover;
+      transition: all 0.4s;
+    }
+  }
+}
