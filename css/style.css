@@ -299,24 +299,8 @@ img {
 /* ===================================================================
   フッターレイアウト
    =================================================================== */
-/* ===================================================================
-  カラーの設定
-   =================================================================== */
-/* ヘッダー
-   ------------------------------------------------------------------ */
-/* お知らせ
-   ------------------------------------------------------------------ */
-/* 販売店・オンラインストア
-   ------------------------------------------------------------------ */
-/* フッター
-   ------------------------------------------------------------------ */
-/* ボタン
-   ------------------------------------------------------------------ */
-/* テキスト
-   ------------------------------------------------------------------ */
 .l-footer {
   width: 100%;
-  background-color: #292929;
 }
 
 /* Component
@@ -794,5 +778,112 @@ img {
 
 .p-recruit__button a {
   font-size: .875rem;
+  color: #fff;
+}
+
+/* ===================================================================
+  フッター
+   =================================================================== */
+.p-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1500px;
+  margin: 0 auto;
+  padding: 47px 110px;
+  background-color: #292929;
+}
+
+.p-footer__logo {
+  margin-bottom: 14px;
+}
+
+.p-footer__address {
+  margin-bottom: 20px;
+}
+
+.p-footer__address p {
+  font-size: .875rem;
+  line-height: 1.71;
+  letter-spacing: .05em;
+  color: #fff;
+}
+
+.p-footer__tel {
+  margin-bottom: 91px;
+}
+
+.p-footer__tel p {
+  font-family: 'Quicksand';
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: .05em;
+  color: #fff;
+}
+
+.p-footer__tel p span {
+  font-size: 1.25rem;
+}
+
+.p-footer__copyright p {
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: .05em;
+  color: #fff;
+}
+
+.p-footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+}
+
+.p-footer__list {
+  margin-bottom: 10px;
+  margin-left: 100px;
+  list-style: none;
+}
+
+.p-footer__item {
+  margin-bottom: 17px;
+}
+
+.p-footer__item a {
+  font-size: .875rem;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: .05em;
+  color: #fff;
+}
+
+.p-footer__subList {
+  padding-top: 8px;
+  list-style: none;
+}
+
+.p-footer__subItem {
+  margin-bottom: 6px;
+  padding-left: 10px;
+}
+
+.p-footer__subItem a {
+  font-size: .75rem;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: .05em;
+  color: #fff;
+}
+
+.p-footer__privacyPolicy a {
+  font-size: .75rem;
+  font-weight: 400;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  letter-spacing: .05em;
   color: #fff;
 }

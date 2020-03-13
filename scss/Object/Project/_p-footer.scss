@@ -1,64 +1,105 @@
-// /* ===================================================================
-//   フッター
-//    =================================================================== */
+/* ===================================================================
+  フッター
+   =================================================================== */
 
-// .p-footer {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 1140px;
-//   margin: 0 auto;
-//   padding: 30px 0px 22px 0px;
+.p-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1500px;
+  margin: 0 auto;
+  padding: 47px 110px;
+  background-color: $bg-color-footer;
 
-//   @include sp {
-//     width: 100%;
-//     justify-content: center;
-//     padding: 28px 21px;
-//   }
+  &__logo {
+    margin-bottom: 14px;
+  }
 
-//   &__list {
+  &__address {
+    margin-bottom: 20px;
 
-//     @include sp {
-//       width: 242px;
-//       flex-wrap: wrap;
-//       justify-content: center;
-//       margin-bottom: 3px;
-//     }
-//   }
+    p {
+      font-size: .875rem;
+      line-height: 1.71;
+      letter-spacing: .05em;
+      color: #fff;
+    }
+  }
 
-//   &__item {
-//     line-height: 18px;
-//     display: inline;
-//     padding: 0 16px;
-//     border-right: 1px solid #3c3c3c;
+  &__tel {
+    margin-bottom: 91px;
 
-//     @include sp {
-//       font-size: .625rem;
-//       white-space: nowrap;
-//       padding: 0 10px;
-//     }
-//   }
+    p {
+      font-family: 'Quicksand';
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: .05em;
+      color: #fff;
 
-//   &__item:first-child {
-//     padding-left: 0;
-//   }
+      span {
+        font-size: 1.25rem;
+      }
+    }
+  }
 
+  &__copyright {
+    p {
+      font-size: .75rem;
+      font-weight: 400;
+      letter-spacing: .05em;
+      color: #fff;
+    }
+  }
 
-//   &__item:last-child {
-//     border: none;
-//   }
+  &__nav {
+    display: flex;
+    margin-top: 8px;
+  }
 
-//   &__logo {
+  &__list {
+    margin-bottom: 10px;
+    margin-left: 100px;
+    list-style: none;
+  }
 
-//     @include sp {
-//       display: none;
-//     }
-//   }
+  &__item {
+    margin-bottom: 17px;
 
-//   &__copyright {
-//     color: $color-text-footer;
-//     font-size: .625rem;
-//     text-align: center;
+    a {
+      font-size: .875rem;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: .05em;
+      color: #fff;
+    }
+  }
 
-//   }
-// }
+  &__subList {
+    padding-top: 8px;
+    list-style: none;
+  }
+
+  &__subItem {
+    margin-bottom: 6px;
+    padding-left: 10px;
+
+    a {
+      font-size: .75rem;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: .05em;
+      color: #fff;
+    }
+  }
+
+  &__privacyPolicy {
+    a {
+      font-size: .75rem;
+      font-weight: 400;
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      letter-spacing: .05em;
+      color: #fff;
+    }
+  }
+}
