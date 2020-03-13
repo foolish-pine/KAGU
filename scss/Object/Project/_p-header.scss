@@ -56,7 +56,6 @@
     font-family: 'Quicksand';
     width: 195px;
     background-color: $color-header-onlineStore;
-    background-image: url(image/ico_cart_small.png);
     background-image: url(../../../image/ico_cart_small.png);
     background-position: top 30px left 23px;
     transition: all .4s;
@@ -82,7 +81,6 @@
   &__contact {
     width: 175px;
     background-color: $color-header-contact;
-    background-image: url(image/ico_mail.png);
     background-image: url(../../../image/ico_mail.png);
     background-position: top 34px left 26px;
     transition: all .4s;
