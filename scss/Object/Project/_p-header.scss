@@ -5,9 +5,12 @@
 .p-header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
   width: 1500px;
   height: 80px;
-  margin: 0 auto;
+  left: 50%;
+  margin-left: -750px;
+  z-index: 100;
   background-color: $bg-color-header;
 
   &__logo {
