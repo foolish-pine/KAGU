@@ -2,6 +2,12 @@
   ニュース
    =================================================================== */
 
+#news {
+  display: block;
+  margin-top: -160px;
+  padding-top: 160px;
+}
+
 .p-news {
   position: relative;
   width: 1500px;
