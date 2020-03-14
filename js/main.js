@@ -8,8 +8,10 @@ $('.js-smoothscroll').click(function (){
       $('html, body').animate({scrollTop : position}, speed);
 });
 
-
-
+$('.js-pagetop').click(function(){
+  var speed = 500;
+  $('html, body').animate({scrollTop : 0}, speed);
+});
 
 
 })

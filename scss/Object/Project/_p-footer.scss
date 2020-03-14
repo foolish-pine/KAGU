@@ -2,6 +2,7 @@
   フッター
    =================================================================== */
 
+
 .p-footer {
   display: flex;
   justify-content: space-between;
@@ -9,6 +10,30 @@
   margin: 0 auto;
   padding: 47px 110px;
   background-color: $bg-color-footer;
+
+  &__pagetop {
+    position: relative;
+    width: 1500px;
+    height: 0;
+    margin: 0 auto;
+
+    a {
+      font-family: 'Quicksand';
+      font-weight: 500;
+      line-height: 30px;
+      position: absolute;
+      top: -30px;
+      right: 110px;
+      display: block;
+      width: 120px;
+      height: 30px;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: .1em;
+      color: #fff;
+      background-color: $bg-color-footer;
+    }
+  }
 
   &__logo {
     margin-bottom: 14px;
