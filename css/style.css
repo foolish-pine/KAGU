@@ -464,7 +464,99 @@ img {
   width: 1500px;
   height: 610px;
   margin: 0 auto;
-  background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/bg_hero_01.jpg?raw=true);
+  position: relative;
+}
+
+.p-mainVisual::before {
+  width: 1500px;
+  height: 610px;
+  z-index: 10;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(140, 118, 101, 0.2);
+}
+
+.p-mainVisual__catch {
+  position: absolute;
+  z-index: 20;
+  top: 232px;
+  left: 105px;
+}
+
+.p-mainVisual__catch p {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2.2rem;
+  letter-spacing: .24em;
+  color: #fff;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  min-width: 960px;
+  height: 610px;
+  background-color: #8c7665;
+}
+
+.slideshow-slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-slides .slide {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow-slides .slide img {
+  position: absolute;
+  left: 50%;
+  margin-left: -750px;
+}
+
+.slideshow-indicator {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 100px;
+  left: 0;
+  height: 20px;
+  text-align: center;
+}
+
+.slideshow-indicator a {
+  display: inline-block;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.slideshow-indicator a::before {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  content: url(../../../image/bullet__white.png);
+  background-size: 10px 10px;
+}
+
+.slideshow-indicator a.active {
+  cursor: default;
+}
+
+.slideshow-indicator a.active::before {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  content: url(../../../image/bullet_blue.png);
+  background-size: 10px 10px;
 }
 
 /* ===================================================================
@@ -486,6 +578,7 @@ img {
 
 .p-news__wrapper {
   position: absolute;
+  z-index: 100;
   top: -80px;
   right: 0;
   left: 0;
@@ -564,10 +657,10 @@ img {
 }
 
 .p-news__button a:hover {
+  -webkit-transition: all .4s;
+  transition: all .4s;
   color: #fff;
   background-color: #333;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 /* ===================================================================
