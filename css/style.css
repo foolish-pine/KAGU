@@ -1,16 +1,15 @@
 @charset "UTF-8";
-/*! ===================================================================
+/*! ===============================================================
   このCSSファイルはSassから生成されています！
   編集しないようご注意ください。
-   =================================================================== */
-/* ===================================================================
-  パーシャルファイルインポート
-   =================================================================== */
-/* Foundation
-   ------------------------------------------------------------------ */
-/* ===================================================================
+================================================================ */
+/* ===============================================================
+  Foundation
+  基本的なスタイルの定義
+================================================================ */
+/* ================================================================
   リセットCSS
-   =================================================================== */
+   ================================================================ */
 /*!
  * ress.css • v2.0.4
  * MIT License
@@ -231,9 +230,9 @@ svg:not([fill]) {
   cursor: default;
 }
 
-/* ===================================================================
+/* ================================================================
   ベース
-   =================================================================== */
+   ================================================================ */
 html {
   font-size: 100%;
 }
@@ -246,9 +245,9 @@ img {
   max-width: 100%;
 }
 
-/* ===================================================================
+/* ================================================================
   メディアクエリ
-   =================================================================== */
+   ================================================================ */
 @media screen and (min-width: 559px) {
   .br--pc {
     display: block;
@@ -267,49 +266,36 @@ img {
   }
 }
 
-/* Utility
-   ------------------------------------------------------------------ */
-/* ===================================================================
-  カラーの設定
-   =================================================================== */
-/* ヘッダー
-   ------------------------------------------------------------------ */
-/* お知らせ
-   ------------------------------------------------------------------ */
-/* 販売店・オンラインストア
-   ------------------------------------------------------------------ */
-/* フッター
-   ------------------------------------------------------------------ */
-/* ボタン
-   ------------------------------------------------------------------ */
-/* テキスト
-   ------------------------------------------------------------------ */
-/* Layout
-   ------------------------------------------------------------------ */
-/* ===================================================================
+/* ===============================================================
+  Layout
+  レイアウト
+================================================================ */
+/* ================================================================
   ヘッダーレイアウト
-   =================================================================== */
+   ================================================================ */
 .l-header {
   width: 100%;
 }
 
-/* ===================================================================
-  ヘッダーレイアウト
-   =================================================================== */
+/* ================================================================
+  メインレイアウト
+   ================================================================ */
 .l-main {
   width: 100%;
   padding-top: 80px;
 }
 
-/* ===================================================================
+/* ================================================================
   フッターレイアウト
-   =================================================================== */
+   ================================================================ */
 .l-footer {
   width: 100%;
 }
 
-/* Component
-   ------------------------------------------------------------------ */
+/* ===============================================================
+  Component
+  コンポーネント
+================================================================ */
 /* ===================================================================
   ボタンコンポーネント
    =================================================================== */
@@ -334,11 +320,13 @@ img {
   transition: all 0.4s;
 }
 
-/* Project
-   ------------------------------------------------------------------ */
-/* ===================================================================
+/* ===============================================================
+  Project
+  プロジェクト
+================================================================ */
+/* ================================================================
   ヘッダー
-   =================================================================== */
+   ================================================================ */
 .p-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,7 +392,7 @@ img {
 }
 
 .p-header__onlineStore {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', serif;
   width: 195px;
   background-color: #24a2b3;
   background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/ico_cart_small.png?raw=true);
@@ -457,26 +445,26 @@ img {
   color: #fff;
 }
 
-/* ===================================================================
+/* ================================================================
   メインヴィジュアル
-   =================================================================== */
+   ================================================================ */
 .p-mainVisual {
+  position: relative;
   width: 1500px;
   height: 610px;
   margin: 0 auto;
-  position: relative;
 }
 
 .p-mainVisual::before {
-  width: 1500px;
-  height: 610px;
-  z-index: 10;
-  content: "";
-  display: block;
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
+  display: block;
+  width: 1500px;
+  height: 610px;
   background-color: rgba(140, 118, 101, 0.2);
+  content: '';
 }
 
 .p-mainVisual__catch {
@@ -489,8 +477,8 @@ img {
 .p-mainVisual__catch p {
   font-family: 'Noto Serif JP', serif;
   font-size: 2.2rem;
-  letter-spacing: .24em;
   color: #fff;
+  letter-spacing: .24em;
 }
 
 .slideshow {
@@ -559,9 +547,9 @@ img {
   background-size: 10px 10px;
 }
 
-/* ===================================================================
+/* ================================================================
   ニュース
-   =================================================================== */
+   ================================================================ */
 #news {
   display: block;
   margin-top: -160px;
@@ -589,22 +577,22 @@ img {
 }
 
 .p-news__title {
-  font-size: 1.5rem;
-  line-height: 1;
   margin-bottom: 52px;
+  font-size: 1.5rem;
+  color: #333;
   text-align: center;
   letter-spacing: .15em;
-  color: #333;
+  line-height: 1;
 }
 
 .p-news__title span {
-  font-family: 'Quicksand';
-  font-size: .94rem;
-  font-weight: 700;
   display: inline-block;
   margin-top: 17px;
-  letter-spacing: .05em;
+  font-family: 'Quicksand', serif;
+  font-size: .94rem;
+  font-weight: 700;
   color: #aa8f7b;
+  letter-spacing: .05em;
 }
 
 .p-news__articleContainer {
@@ -625,31 +613,31 @@ img {
 }
 
 .p-news__articleDate time {
-  font-family: 'Quicksand';
+  display: inline-block;
+  font-family: 'Quicksand', serif;
   font-size: .875rem;
   font-weight: 700;
-  display: inline-block;
-  letter-spacing: .05em;
   color: #333;
+  letter-spacing: .05em;
 }
 
 .p-news__articleDate p {
-  font-size: .75rem;
-  font-weight: 500;
   display: inline-block;
   margin-left: 15px;
   padding: 1px 10px;
-  letter-spacing: .05em;
-  color: #fff;
   background-color: #24a2b3;
+  font-size: .75rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: .05em;
 }
 
 .p-news__articleHeadline {
   font-size: .875rem;
   font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: .05em;
   color: #333;
+  letter-spacing: .05em;
+  line-height: 1.5rem;
 }
 
 .p-news__button {
@@ -657,15 +645,15 @@ img {
 }
 
 .p-news__button a:hover {
+  background-color: #333;
+  color: #fff;
   -webkit-transition: all .4s;
   transition: all .4s;
-  color: #fff;
-  background-color: #333;
 }
 
-/* ===================================================================
+/* ================================================================
   取り扱い家具
-   =================================================================== */
+   ================================================================ */
 #furniture {
   display: block;
   margin-top: -80px;
@@ -684,22 +672,22 @@ img {
 }
 
 .p-furniture__title {
-  font-size: 1.5rem;
-  line-height: 1;
   margin-bottom: 47px;
+  font-size: 1.5rem;
+  color: #333;
   text-align: center;
   letter-spacing: .15em;
-  color: #333;
+  line-height: 1;
 }
 
 .p-furniture__title span {
-  font-family: 'Quicksand';
-  font-size: .94rem;
-  font-weight: 700;
   display: inline-block;
   margin-top: 17px;
-  letter-spacing: .05em;
+  font-family: 'Quicksand', serif;
+  font-size: .94rem;
+  font-weight: 700;
   color: #aa8f7b;
+  letter-spacing: .05em;
 }
 
 .p-furniture__twoColumnsContainer {
@@ -722,23 +710,23 @@ img {
 }
 
 .p-furniture__twoColumnsText h3 {
+  margin-bottom: 25px;
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 25px;
-  letter-spacing: .05em;
   color: #333;
+  letter-spacing: .05em;
 }
 
 .p-furniture__twoColumnsText p {
-  line-height: 1.875rem;
   margin-bottom: 55px;
+  line-height: 1.875rem;
 }
 
 .p-furniture__twoColumnsButton a:hover {
+  background-color: #333;
+  color: #fff;
   -webkit-transition: all .4s;
   transition: all .4s;
-  color: #fff;
-  background-color: #333;
 }
 
 .p-furniture__threeColumns {
@@ -751,19 +739,19 @@ img {
 }
 
 .p-furniture__threeColumns h3 {
+  margin-bottom: 15px;
   font-size: 1.25rem;
   font-weight: 500;
-  margin-bottom: 15px;
-  letter-spacing: .05em;
   color: #333;
+  letter-spacing: .05em;
 }
 
 .p-furniture__threeColumns p {
+  margin-bottom: 55px;
   font-size: .94rem;
   font-weight: 400;
-  line-height: 1.875rem;
-  margin-bottom: 55px;
   letter-spacing: .05em;
+  line-height: 1.875rem;
 }
 
 .p-furniture__threeColumnsImage {
@@ -775,15 +763,15 @@ img {
 }
 
 .p-furniture__threeColumnsButton a:hover {
+  background-color: #333;
+  color: #fff;
   -webkit-transition: all .4s;
   transition: all .4s;
-  color: #fff;
-  background-color: #333;
 }
 
-/* ===================================================================
+/* ================================================================
   販売店・オンラインストア
-   =================================================================== */
+   ================================================================ */
 #shop {
   display: block;
   margin-top: -80px;
@@ -819,39 +807,39 @@ img {
 }
 
 .p-shop h3 {
+  margin-bottom: 20px;
   font-size: 1.25rem;
   font-weight: 500;
-  line-height: 1;
-  margin-bottom: 20px;
-  letter-spacing: .05em;
   color: #333;
+  letter-spacing: .05em;
+  line-height: 1;
 }
 
 .p-shop p {
+  margin-bottom: 45px;
   font-size: .94rem;
   font-weight: 400;
-  line-height: 2;
-  margin-bottom: 45px;
-  letter-spacing: .05em;
   color: #333;
+  letter-spacing: .05em;
+  line-height: 2;
 }
 
 .p-shop__link {
   font-size: .94rem;
   font-weight: 700;
+  color: #333;
   text-decoration: none;
   letter-spacing: .05em;
-  color: #333;
 }
 
 .p-shop__link::after {
-  content: url(/image/arrow.png);
   margin-left: 8px;
+  content: url(/image/arrow.png);
 }
 
-/* ===================================================================
+/* ================================================================
   採用情報
-   =================================================================== */
+   ================================================================ */
 #shop {
   display: block;
   margin-top: -80px;
@@ -877,7 +865,7 @@ img {
 }
 
 .p-recruit__title span {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', serif;
   font-size: .94rem;
   font-weight: 700;
   display: inline-block;
@@ -906,9 +894,9 @@ img {
   color: #fff;
 }
 
-/* ===================================================================
+/* ================================================================
   フッター
-   =================================================================== */
+   ================================================================ */
 .p-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -930,20 +918,20 @@ img {
 }
 
 .p-footer__pagetop a {
-  font-family: 'Quicksand';
-  font-weight: 500;
-  line-height: 30px;
   position: absolute;
   top: -30px;
   right: 110px;
   display: block;
   width: 120px;
   height: 30px;
+  background-color: #292929;
+  font-family: 'Quicksand', serif;
+  font-weight: 500;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   letter-spacing: .1em;
-  color: #fff;
-  background-color: #292929;
+  line-height: 30px;
 }
 
 .p-footer__logo {
@@ -956,9 +944,9 @@ img {
 
 .p-footer__address p {
   font-size: .875rem;
-  line-height: 1.71;
-  letter-spacing: .05em;
   color: #fff;
+  letter-spacing: .05em;
+  line-height: 1.71;
 }
 
 .p-footer__tel {
@@ -966,11 +954,11 @@ img {
 }
 
 .p-footer__tel p {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand', serif;
   font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: .05em;
   color: #fff;
+  letter-spacing: .05em;
 }
 
 .p-footer__tel p span {
@@ -980,8 +968,8 @@ img {
 .p-footer__copyright p {
   font-size: .75rem;
   font-weight: 400;
-  letter-spacing: .05em;
   color: #fff;
+  letter-spacing: .05em;
 }
 
 .p-footer__nav {
@@ -1004,9 +992,9 @@ img {
 .p-footer__item a {
   font-size: .875rem;
   font-weight: 400;
+  color: #fff;
   text-decoration: none;
   letter-spacing: .05em;
-  color: #fff;
 }
 
 .p-footer__subList {
@@ -1022,17 +1010,17 @@ img {
 .p-footer__subItem a {
   font-size: .75rem;
   font-weight: 400;
+  color: #fff;
   text-decoration: none;
   letter-spacing: .05em;
-  color: #fff;
 }
 
 .p-footer__privacyPolicy a {
+  display: block;
   font-size: .75rem;
   font-weight: 400;
-  display: block;
+  color: #fff;
   text-align: right;
   text-decoration: none;
   letter-spacing: .05em;
-  color: #fff;
 }
