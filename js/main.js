@@ -1,3 +1,7 @@
+/* ================================================================
+  jQuery
+   ================================================================ */
+
 
 // ---------------------------------------------
 // スムーススクロール（ページ内リンク）
@@ -9,7 +13,7 @@ $('.js-smoothscroll').click(function (){
       target = $(href == "#" || href == "" ? 'html' : href),
       position = target.offset().top;
   $('html, body').animate({scrollTop : position}, speed);
-});
+  });
 });
 
 // ---------------------------------------------
@@ -19,7 +23,7 @@ $(function (){
 $('.js-pagetop').click(function(){
   var speed = 500;
   $('html, body').animate({scrollTop : 0}, speed);
-});
+  });
 });
 
 // ---------------------------------------------
@@ -83,5 +87,5 @@ $('.slideshow').each(function(){
   goToSlide(currentIndex);
 
   startTimer();
-});
+  });
 });

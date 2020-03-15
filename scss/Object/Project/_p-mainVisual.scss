@@ -1,23 +1,23 @@
-/* ===================================================================
+/* ================================================================
   メインヴィジュアル
-   =================================================================== */
+   ================================================================ */
 
 .p-mainVisual {
+  position: relative;
   width: 1500px;
   height: 610px;
   margin: 0 auto;
-  position: relative;
 
   &::before {
-    width:1500px;
-    height:610px;
-    z-index: 10;
-    content: "";
-    display: block;
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 0;
+    display: block;
+    width: 1500px;
+    height: 610px;
     background-color: rgba(140,118,101,.2);
+    content: '';
   }
 
   &__catch {
@@ -29,8 +29,8 @@
     p {
       font-family: 'Noto Serif JP', serif;
       font-size: 2.2rem;
-      letter-spacing: .24em;
       color: #fff;
+      letter-spacing: .24em;
     }
   }
 }
@@ -83,20 +83,20 @@
       font-size: 0;
       line-height: 0;
       display: inline-block;
-      content: url(../../../image/bullet__white.png);
+      content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet__white.png?raw=true);
       background-size: 10px 10px;
     }
   }
   
   a {
     &.active {
-      cursor: default;
-  
+      cursor: default; 
+
       &::before {
         font-size: 0;
         line-height: 0;
         display: inline-block;
-        content: url(../../../image/bullet_blue.png);
+        content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet_blue.png?raw=true);
         background-size: 10px 10px;
       }
     }

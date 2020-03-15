@@ -1,6 +1,6 @@
-/* ===================================================================
+/* ================================================================
   ニュース
-   =================================================================== */
+   ================================================================ */
 
 #news {
   display: block;
@@ -28,21 +28,21 @@
   }
 
   &__title {
-    font-size: 1.5rem;
-    line-height: 1;
     margin-bottom: 52px;
+    font-size: 1.5rem;
+    color: $color-text;
     text-align: center;
     letter-spacing: .15em;
-    color: $color-text;
+    line-height: 1;
 
     span {
-      font-family: 'Quicksand';
-      font-size: .94rem;
-      font-weight: 700;
       display: inline-block;
       margin-top: 17px;
-      letter-spacing: .05em;
+      font-family: 'Quicksand', serif;
+      font-size: .94rem;
+      font-weight: 700;
       color: $color-text-titleEnglish;
+      letter-spacing: .05em;
     }
   }
 
@@ -62,32 +62,32 @@
     margin-bottom: 15px;
 
     time {
-      font-family: 'Quicksand';
+      display: inline-block;
+      font-family: 'Quicksand', serif;
       font-size: .875rem;
       font-weight: 700;
-      display: inline-block;
-      letter-spacing: .05em;
       color: $color-text;
+      letter-spacing: .05em;
     }
 
     p {
-      font-size: .75rem;
-      font-weight: 500;
       display: inline-block;
       margin-left: 15px;
       padding: 1px 10px;
-      letter-spacing: .05em;
-      color: #fff;
       background-color: $color-news-tag;
+      font-size: .75rem;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: .05em;
     }
   }
 
   &__articleHeadline {
     font-size: .875rem;
     font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: .05em;
     color: $color-text;
+    letter-spacing: .05em;
+    line-height: 1.5rem;
   }
 
   &__button {
@@ -95,9 +95,9 @@
 
     a {
       &:hover {
-        transition: all .4s;
-        color: #fff;
         background-color: $color-button-hover;
+        color: #fff;
+        transition: all .4s;
       }
     }
   }

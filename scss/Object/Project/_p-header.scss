@@ -1,6 +1,6 @@
-/* ===================================================================
+/* ================================================================
   ヘッダー
-   =================================================================== */
+   ================================================================ */
 
 .p-header {
   display: flex;
@@ -56,7 +56,7 @@
   }
 
   &__onlineStore {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', serif;
     width: 195px;
     background-color: $color-header-onlineStore;
     background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/ico_cart_small.png?raw=true);
@@ -93,7 +93,6 @@
       transition: all .4s;
     }
 
-
     a {
       font-size: .94rem;
       line-height: 80px;
@@ -103,7 +102,5 @@
       letter-spacing: .05em;
       color: #fff;
     }
-  }
-
-  
+  }  
 }

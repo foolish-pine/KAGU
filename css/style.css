@@ -543,7 +543,7 @@ img {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  content: url(../../../image/bullet__white.png);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet__white.png?raw=true);
   background-size: 10px 10px;
 }
 
@@ -555,7 +555,7 @@ img {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  content: url(../../../image/bullet_blue.png);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet_blue.png?raw=true);
   background-size: 10px 10px;
 }
 

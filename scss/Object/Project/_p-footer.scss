@@ -1,6 +1,6 @@
-/* ===================================================================
+/* ================================================================
   フッター
-   =================================================================== */
+   ================================================================ */
 
 
 .p-footer {
@@ -18,20 +18,20 @@
     margin: 0 auto;
 
     a {
-      font-family: 'Quicksand';
-      font-weight: 500;
-      line-height: 30px;
       position: absolute;
       top: -30px;
       right: 110px;
       display: block;
       width: 120px;
       height: 30px;
+      background-color: $bg-color-footer;
+      font-family: 'Quicksand', serif;
+      font-weight: 500;
+      color: #fff;
       text-align: center;
       text-decoration: none;
       letter-spacing: .1em;
-      color: #fff;
-      background-color: $bg-color-footer;
+      line-height: 30px;
     }
   }
 
@@ -44,9 +44,9 @@
 
     p {
       font-size: .875rem;
-      line-height: 1.71;
-      letter-spacing: .05em;
       color: #fff;
+      letter-spacing: .05em;
+      line-height: 1.71;
     }
   }
 
@@ -54,11 +54,11 @@
     margin-bottom: 91px;
 
     p {
-      font-family: 'Quicksand';
+      font-family: 'Quicksand', serif;
       font-size: 1.5rem;
       font-weight: 500;
-      letter-spacing: .05em;
       color: #fff;
+      letter-spacing: .05em;
 
       span {
         font-size: 1.25rem;
@@ -70,8 +70,8 @@
     p {
       font-size: .75rem;
       font-weight: 400;
-      letter-spacing: .05em;
       color: #fff;
+      letter-spacing: .05em;
     }
   }
 
@@ -92,9 +92,9 @@
     a {
       font-size: .875rem;
       font-weight: 400;
+      color: #fff;
       text-decoration: none;
       letter-spacing: .05em;
-      color: #fff;
     }
   }
 
@@ -110,21 +110,21 @@
     a {
       font-size: .75rem;
       font-weight: 400;
+      color: #fff;
       text-decoration: none;
       letter-spacing: .05em;
-      color: #fff;
     }
   }
 
   &__privacyPolicy {
     a {
+      display: block;
       font-size: .75rem;
       font-weight: 400;
-      display: block;
+      color: #fff;
       text-align: right;
       text-decoration: none;
       letter-spacing: .05em;
-      color: #fff;
     }
   }
 }
