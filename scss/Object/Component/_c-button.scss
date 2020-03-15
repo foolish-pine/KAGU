@@ -3,22 +3,22 @@
    =================================================================== */
 
 .c-button {
-  line-height: 53px;
+  border: 2px solid $color-button-border;
   width: 220px;
   height: 53px;
-  text-align: center;
-  border: 2px solid $color-button-border;
   background-color: #fff;
+  text-align: center;
+  line-height: 53px;
 
   a {
+    display: block;
     font-size: .94rem;
     font-weight: 700;
-    line-height: 49px;
-    display: block;
+    color: $color-button-text;
     text-decoration: none;
     letter-spacing: .1em;
-    color: $color-button-text;
-    transition: all 0.4s;
+    line-height: 49px;
+    transition: all .4s;
   }
 }
 
@@ -28,6 +28,7 @@
   background-color: rgba(0, 0, 0, 0);
 
   a {
+    font-size: .875rem;
     color: #fff;
   }
 }
