@@ -300,24 +300,24 @@ img {
   ボタンコンポーネント
    =================================================================== */
 .c-button, .c-button--clear {
-  line-height: 53px;
+  border: 2px solid #333;
   width: 220px;
   height: 53px;
-  text-align: center;
-  border: 2px solid #333;
   background-color: #fff;
+  text-align: center;
+  line-height: 53px;
 }
 
 .c-button a, .c-button--clear a {
+  display: block;
   font-size: .94rem;
   font-weight: 700;
-  line-height: 49px;
-  display: block;
+  color: #333;
   text-decoration: none;
   letter-spacing: .1em;
-  color: #333;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  line-height: 49px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .c-button--clear {
@@ -326,6 +326,7 @@ img {
 }
 
 .c-button--clear a {
+  font-size: .875rem;
   color: #fff;
 }
 
@@ -657,6 +658,7 @@ img {
   color: #333;
   letter-spacing: .05em;
   line-height: 1.5rem;
+  text-align: justify;
 }
 
 .p-news__button {
@@ -728,6 +730,7 @@ img {
 .p-furniture__twoColumnsText p {
   margin-bottom: 55px;
   line-height: 1.875rem;
+  text-align: justify;
 }
 
 .p-furniture__twoColumnsButton a:hover {
@@ -760,6 +763,7 @@ img {
   font-weight: 400;
   letter-spacing: .05em;
   line-height: 1.875rem;
+  text-align: justify;
 }
 
 .p-furniture__threeColumnsImage {
@@ -884,10 +888,6 @@ img {
 
 .p-recruit__button {
   margin: 0 auto;
-}
-
-.p-recruit__button a {
-  font-size: .875rem;
 }
 
 /* ================================================================
