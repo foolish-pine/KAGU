@@ -299,7 +299,7 @@ img {
 /* ===================================================================
   ボタンコンポーネント
    =================================================================== */
-.c-button {
+.c-button, .c-button--clear {
   line-height: 53px;
   width: 220px;
   height: 53px;
@@ -308,7 +308,7 @@ img {
   background-color: #fff;
 }
 
-.c-button a {
+.c-button a, .c-button--clear a {
   font-size: .94rem;
   font-weight: 700;
   line-height: 49px;
@@ -318,6 +318,15 @@ img {
   color: #333;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.c-button--clear {
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.c-button--clear a {
+  color: #fff;
 }
 
 /* ===================================================================
@@ -875,13 +884,10 @@ img {
 
 .p-recruit__button {
   margin: 0 auto;
-  border: 2px solid #fff;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .p-recruit__button a {
   font-size: .875rem;
-  color: #fff;
 }
 
 /* ================================================================

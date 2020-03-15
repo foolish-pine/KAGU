@@ -21,3 +21,13 @@
     transition: all 0.4s;
   }
 }
+
+.c-button--clear {
+  @extend .c-button;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+
+  a {
+    color: #fff;
+  }
+}
