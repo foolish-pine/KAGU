@@ -29,20 +29,9 @@
 
   &__title {
     margin-bottom: 52px;
-    font-size: 1.5rem;
-    color: $color-text;
-    text-align: center;
-    letter-spacing: .15em;
-    line-height: 1;
 
-    span {
-      display: inline-block;
-      margin-top: 17px;
-      font-family: 'Quicksand', serif;
-      font-size: .94rem;
-      font-weight: 700;
-      color: $color-text-titleEnglish;
-      letter-spacing: .05em;
+    &::after {
+      content: 'NEWS';
     }
   }
 
