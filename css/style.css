@@ -234,11 +234,12 @@ svg:not([fill]) {
   ベース
    ================================================================ */
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
 body {
   font-family: 'Noto Sans JP', 'Quicksand', sans-serif;
+  font-size: 1.6rem;
 }
 
 img {
@@ -310,7 +311,7 @@ img {
 
 .c-button a, .c-button--clear a {
   display: block;
-  font-size: .94rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #333;
   text-decoration: none;
@@ -326,7 +327,7 @@ img {
 }
 
 .c-button--clear a {
-  font-size: .875rem;
+  font-size: 1.4rem;
   color: #fff;
 }
 
@@ -334,10 +335,10 @@ img {
   テキストコンポーネント
    =================================================================== */
 .c-sectionTitle {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   color: #333;
   text-align: center;
-  letter-spacing: .15em;
+  letter-spacing: .14em;
   line-height: 1;
 }
 
@@ -345,7 +346,7 @@ img {
   display: inline-block;
   margin-top: 17px;
   font-family: 'Quicksand', serif;
-  font-size: .94rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #aa8f7b;
   letter-spacing: .05em;
@@ -404,7 +405,7 @@ img {
 }
 
 .p-header__item a {
-  font-size: .94rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 80px;
   padding-bottom: 3px;
@@ -439,7 +440,7 @@ img {
 }
 
 .p-header__onlineStore a {
-  font-size: .94rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 80px;
   display: block;
@@ -467,7 +468,7 @@ img {
 }
 
 .p-header__contact a {
-  font-size: .94rem;
+  font-size: 1.5rem;
   line-height: 80px;
   display: block;
   padding-left: 57px;
@@ -501,13 +502,13 @@ img {
 .p-mainVisual__catch {
   position: absolute;
   z-index: 20;
-  top: 232px;
+  top: 234px;
   left: 105px;
 }
 
 .p-mainVisual__catch p {
   font-family: 'Noto Serif JP', serif;
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   color: #fff;
   letter-spacing: .24em;
 }
@@ -597,7 +598,7 @@ img {
 
 .p-news__wrapper {
   position: absolute;
-  z-index: 100;
+  z-index: 50;
   top: -80px;
   right: 0;
   left: 0;
@@ -608,7 +609,7 @@ img {
 }
 
 .p-news__title {
-  margin-bottom: 52px;
+  margin-bottom: 54px;
 }
 
 .p-news__title::after {
@@ -635,7 +636,7 @@ img {
 .p-news__articleDate time {
   display: inline-block;
   font-family: 'Quicksand', serif;
-  font-size: .875rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #333;
   letter-spacing: .05em;
@@ -646,19 +647,19 @@ img {
   margin-left: 15px;
   padding: 1px 10px;
   background-color: #24a2b3;
-  font-size: .75rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
   letter-spacing: .05em;
 }
 
 .p-news__articleHeadline {
-  font-size: .875rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #333;
-  letter-spacing: .05em;
-  line-height: 1.5rem;
   text-align: justify;
+  letter-spacing: .05em;
+  line-height: 1.71;
 }
 
 .p-news__button {
@@ -721,16 +722,17 @@ img {
 
 .p-furniture__twoColumnsText h3 {
   margin-bottom: 25px;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #333;
   letter-spacing: .05em;
 }
 
 .p-furniture__twoColumnsText p {
-  margin-bottom: 55px;
-  line-height: 1.875rem;
-  text-align: justify;
+  margin-bottom: 56px;
+  font-size: 1.5rem;
+  letter-spacing: .06em;
+  line-height: 2;
 }
 
 .p-furniture__twoColumnsButton a:hover {
@@ -751,19 +753,19 @@ img {
 
 .p-furniture__threeColumns h3 {
   margin-bottom: 15px;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #333;
   letter-spacing: .05em;
 }
 
 .p-furniture__threeColumns p {
-  margin-bottom: 55px;
-  font-size: .94rem;
+  margin-bottom: 54px;
+  font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: .05em;
-  line-height: 1.875rem;
   text-align: justify;
+  letter-spacing: .05em;
+  line-height: 2;
 }
 
 .p-furniture__threeColumnsImage {
@@ -820,7 +822,7 @@ img {
 
 .p-shop h3 {
   margin-bottom: 20px;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #333;
   letter-spacing: .05em;
@@ -829,7 +831,7 @@ img {
 
 .p-shop p {
   margin-bottom: 45px;
-  font-size: .94rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #333;
   letter-spacing: .05em;
@@ -837,7 +839,7 @@ img {
 }
 
 .p-shop__link {
-  font-size: .94rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #333;
   text-decoration: none;
@@ -878,7 +880,7 @@ img {
 }
 
 .p-recruit__text p {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 2;
   margin-bottom: 54px;
@@ -931,15 +933,15 @@ img {
 }
 
 .p-footer__logo {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .p-footer__address {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .p-footer__address p {
-  font-size: .875rem;
+  font-size: 1.4rem;
   color: #fff;
   letter-spacing: .05em;
   line-height: 1.71;
@@ -951,18 +953,18 @@ img {
 
 .p-footer__tel p {
   font-family: 'Quicksand', serif;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #fff;
   letter-spacing: .05em;
 }
 
 .p-footer__tel p span {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .p-footer__copyright p {
-  font-size: .75rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
   letter-spacing: .05em;
@@ -982,11 +984,11 @@ img {
 }
 
 .p-footer__item {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .p-footer__item a {
-  font-size: .875rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: #fff;
   text-decoration: none;
@@ -1004,7 +1006,7 @@ img {
 }
 
 .p-footer__subItem a {
-  font-size: .75rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
   text-decoration: none;
@@ -1013,7 +1015,7 @@ img {
 
 .p-footer__privacyPolicy a {
   display: block;
-  font-size: .75rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
   text-align: right;

@@ -3,11 +3,12 @@
    ================================================================ */
 
 html {
-  font-size: 100%;
+  font-size: 62.5%; // ルートのフォントサイズ = 10px
 }
 
 body {
   font-family: 'Noto Sans JP', 'Quicksand', sans-serif;
+  font-size: 1.6rem; // ルートのフォントサイズ = 1.6em (16px)
 }
 
 img {
