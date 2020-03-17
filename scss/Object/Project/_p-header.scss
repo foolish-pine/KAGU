@@ -13,6 +13,10 @@
   z-index: 100;
   background-color: $bg-color-header;
 
+  @include sp {
+    height: 60px;
+  }
+
   &__logo {
     margin: 29px 0 28px 40px;
 
@@ -27,6 +31,12 @@
 
   &__nav-onlineStore-contact {
     display: flex;
+  }
+
+  &__nav {
+    @include sp {
+      display: none;
+    }
   }
 
   &__list {

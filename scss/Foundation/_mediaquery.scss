@@ -2,18 +2,18 @@
   メディアクエリ
    ================================================================ */
 
-$tab-lg: 1024px;
-$tab-md: 959px;
+$pc: 1024px;
+$tab: 959px;
 $sp: 559px;
 
-@mixin tab-lg {
-  @media (max-width: ($tab-lg)) {
+@mixin pc {
+  @media (max-width: ($pc)) {
     @content;
   }
 }
 
 @mixin tab-md {
-  @media (max-width: ($tab-md)) {
+  @media (max-width: ($tab)) {
     @content;
   }
 }

@@ -375,6 +375,12 @@ img {
   background-color: #fcfcfc;
 }
 
+@media (max-width: 559px) {
+  .p-header {
+    height: 60px;
+  }
+}
+
 .p-header__logo {
   margin: 29px 0 28px 40px;
 }
@@ -391,6 +397,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 559px) {
+  .p-header__nav {
+    display: none;
+  }
 }
 
 .p-header__list {
