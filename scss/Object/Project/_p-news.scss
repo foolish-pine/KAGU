@@ -10,9 +10,10 @@
 
 .p-news {
   position: relative;
-  width: 1500px;
-  height: 610px;
   margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+  height: 610px;
   background-color: $bg-color-news;
 
   &__wrapper {
@@ -21,14 +22,24 @@
     top: -80px;
     right: 0;
     left: 0;
-    width: 960px;
-    margin: 0 auto;
-    padding: 77px 80px 81px;
     background-color: #fff;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 90%;
+    height: 630px;
+    max-width: 960px;
+
+    @include mq(tab) {
+      padding: 77px 60px 81px;
+    }
   }
 
   &__title {
-    margin-bottom: 54px;
+    margin-bottom: 30px;
+
+    @include mq(tab) {
+      margin-bottom: 53px;
+    }
 
     &::after {
       content: 'NEWS';
@@ -37,14 +48,21 @@
 
   &__articleContainer {
     display: grid;
-    margin-bottom: 56px;
-
-    gap: 42px 69px;
-    grid-template-columns: 360px 380px;
+    padding: 0 20px;
+    grid-template-columns: 1fr;
 
     a {
       text-decoration: none;
+      margin-bottom: 30px;
     }
+
+    @include mq(sp) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      gap: 14px 60px;
+      margin-bottom: 26px;
+    }
+    
   }
 
   &__articleDate {
@@ -75,7 +93,6 @@
     font-size: 1.4rem;
     font-weight: 500;
     color: $color-text;
-    text-align: justify;
     letter-spacing: .05em;
     line-height: 1.71;
   }

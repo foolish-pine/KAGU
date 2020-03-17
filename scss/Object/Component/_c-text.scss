@@ -3,19 +3,28 @@
    =================================================================== */
 
 .c-sectionTitle {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: $color-text;
   text-align: center;
-  letter-spacing: .14em;
+  letter-spacing: .15em;
   line-height: 1;
+
+  @include mq(sp) {
+    font-size: 2.4rem;
+    letter-spacing: .14em;
+  }
 
   &::after {
     display: inline-block;
     margin-top: 17px;
     font-family: 'Quicksand', serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: $color-text-titleEnglish;
     letter-spacing: .05em;
+
+    @include mq(sp) {
+      font-size: 1.5rem;
+    }
   }
 }
