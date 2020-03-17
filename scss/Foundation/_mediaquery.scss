@@ -2,34 +2,28 @@
   メディアクエリ
    ================================================================ */
 
-$tab-lg: 1024px;
-$tab-md: 959px;
+$pc: 1024px;
+$tab: 959px;
 $sp: 559px;
 
-@mixin tab-lg {
-  @media (max-width: ($tab-lg)) {
+$breakpoints : (
+  "pc":"screen and (min-width:1024px)",
+  "tab":"screen and (min-width:959px)",
+  "sp":"screen and (min-width:559px)"
+);
+
+@mixin mq($breakpoint:sp){
+  @media #{map-get($breakpoints, $breakpoint)}{
     @content;
   }
 }
 
-@mixin tab-md {
-  @media (max-width: ($tab-md)) {
-    @content;
-  }
-}
+// @media screen and (min-width: $sp){	
+//   .br--pc { display:block; }
+//   .br--sp { display:none; }
+// }
 
-@mixin sp {
-  @media (max-width: ($sp)) {
-    @content;
-  }
-}
-
-@media screen and (min-width: $sp){	
-  .br--pc { display:block; }
-  .br--sp { display:none; }
-}
-
-@media screen and (max-width: $sp){	
-  .br--pc { display:none; }
-  .br--sp { display:block; }
-}
+// @media screen and (max-width: $sp){	
+//   .br--pc { display:none; }
+//   .br--sp { display:block; }
+// }
