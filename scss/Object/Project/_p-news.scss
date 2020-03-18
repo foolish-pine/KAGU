@@ -20,14 +20,9 @@
     z-index: 50;
     width: 90%;
     max-width: 960px;
-    margin: -40px auto 0;
-    padding: 40px 0;
+    margin: -5.3% auto 0;
+    padding: 5% 3.75%;
     background-color: #fff;
-
-    @include mq(tab) {
-      margin: -80px auto 0;
-      padding: 77px 60px 81px;
-    }
   }
 
   &__title {
@@ -90,7 +85,7 @@
     color: $color-text;
     letter-spacing: .05em;
     line-height: 1.71;
-          text-align: justify;
+    text-align: justify;
   }
 
   &__button {
