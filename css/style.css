@@ -324,7 +324,7 @@ img {
   line-height: 1;
 }
 
-@media screen and (min-width: 559px) {
+@media screen and (min-width: 560px) {
   .c-sectionTitle {
     font-size: 2.4rem;
     letter-spacing: .14em;
@@ -341,7 +341,7 @@ img {
   letter-spacing: .05em;
 }
 
-@media screen and (min-width: 559px) {
+@media screen and (min-width: 560px) {
   .c-sectionTitle::after {
     font-size: 1.5rem;
   }
@@ -575,7 +575,7 @@ img {
 }
 
 /* ================================================================
-  ニュース
+  お知らせ
    ================================================================ */
 #news {
   display: block;
@@ -584,30 +584,26 @@ img {
 }
 
 .p-news {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1500px;
   width: 100%;
-  height: 610px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 100px;
   background-color: #f7f6f5;
 }
 
 .p-news__wrapper {
-  position: absolute;
+  position: relative;
   z-index: 50;
-  top: -80px;
-  right: 0;
-  left: 0;
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 40px 0;
   width: 90%;
-  height: 630px;
   max-width: 960px;
+  margin: -40px auto 0;
+  padding: 40px 0;
+  background-color: #fff;
 }
 
-@media screen and (min-width: 959px) {
+@media screen and (min-width: 960px) {
   .p-news__wrapper {
+    margin: -80px auto 0;
     padding: 77px 60px 81px;
   }
 }
@@ -616,7 +612,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 959px) {
+@media screen and (min-width: 560px) {
   .p-news__title {
     margin-bottom: 53px;
   }
@@ -630,29 +626,28 @@ img {
   display: -ms-grid;
   display: grid;
   padding: 0 20px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
 }
 
-.p-news__articleContainer a {
-  text-decoration: none;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 559px) {
+@media screen and (min-width: 560px) {
   .p-news__articleContainer {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 14px 60px;
-    margin-bottom: 26px;
+    margin-bottom: 40px;
+    gap: 5.5% 7.5%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.p-news__articleContainer a {
+  margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .p-news__articleDate {
   margin-bottom: 15px;
+  white-space: nowrap;
 }
 
 .p-news__articleDate time {
@@ -681,6 +676,7 @@ img {
   color: #333;
   letter-spacing: .05em;
   line-height: 1.71;
+  text-align: justify;
 }
 
 .p-news__button {

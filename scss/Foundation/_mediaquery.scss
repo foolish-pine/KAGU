@@ -3,13 +3,13 @@
    ================================================================ */
 
 $pc: 1024px;
-$tab: 959px;
-$sp: 559px;
+$tab: 960px;
+$sp: 560px;
 
 $breakpoints : (
   "pc":"screen and (min-width:1024px)",
-  "tab":"screen and (min-width:959px)",
-  "sp":"screen and (min-width:559px)"
+  "tab":"screen and (min-width:960px)",
+  "sp":"screen and (min-width:560px)"
 );
 
 @mixin mq($breakpoint:sp){
