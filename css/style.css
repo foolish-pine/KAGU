@@ -257,6 +257,8 @@ img {
   ヘッダーレイアウト
    ================================================================ */
 .l-header {
+  position: fixed;
+  z-index: 100;
   width: 100%;
 }
 
@@ -265,7 +267,13 @@ img {
    ================================================================ */
 .l-main {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .l-main {
+    padding-top: 80px;
+  }
 }
 
 /* ================================================================
@@ -354,23 +362,35 @@ img {
   ヘッダー
    ================================================================ */
 .p-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: fixed;
-  width: 1500px;
-  height: 80px;
-  left: 50%;
-  margin-left: -750px;
-  z-index: 100;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
   background-color: #fcfcfc;
 }
 
+@media screen and (min-width: 1024px) {
+  .p-header {
+    max-width: 1500px;
+    height: 80px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .p-header__logo {
-  margin: 29px 0 28px 40px;
+  position: absolute;
+  top: 23px;
+  left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__logo {
+    top: 29px;
+    left: 40px;
+  }
 }
 
 .p-header__logo img {
@@ -381,50 +401,202 @@ img {
   display: block;
 }
 
-.p-header__nav-onlineStore-contact {
+@media screen and (min-width: 1024px) {
+  .p-header__logo--sp {
+    display: none;
+  }
+}
+
+.p-header__logo--pc {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__logo--pc {
+    display: block;
+  }
+}
+
+.p-header__nav {
+  position: absolute;
+  background: rgba(41, 41, 41, 0.8);
+  display: none;
+  margin-top: 60px;
+  height: 100vh;
+  width: 100%;
+  z-index: 101;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__nav {
+    display: block;
+    background: none;
+    margin-top: 0;
+    right: 0;
+    height: 80px;
+  }
+}
+
+.p-header__navWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__navWrapper {
+    height: 80px;
+  }
 }
 
 .p-header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__list {
+    overflow: hidden;
+    position: absolute;
+    z-index: 102;
+    right: 0;
+  }
+}
+
+.p-header__list:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .p-header__item {
-  margin-right: 37px;
+  width: 100vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__item {
+    width: auto;
+    margin-right: 37px;
+  }
 }
 
 .p-header__item a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 80px;
-  padding-bottom: 3px;
-  text-decoration: none;
   letter-spacing: .05em;
-  color: #333;
-  border-bottom: 2px solid #fcfcfc;
+  border-bottom: 1px solid #fff;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
-.p-header__item a:hover {
-  border-bottom: 2px solid #333;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+@media screen and (min-width: 1024px) {
+  .p-header__item a {
+    color: #333;
+    display: inline;
+    padding-bottom: 3px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    border-bottom: 2px solid #fcfcfc;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__item a:hover {
+    border-bottom: 2px solid #333;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+}
+
+.p-header__menu {
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  width: 24px;
+  z-index: 101;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__menu {
+    display: none;
+  }
+}
+
+.p-header__menuLine {
+  background: #000;
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  width: 100%;
+  right: 0;
+}
+
+.p-header__menuLine:first-child.active {
+  top: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.p-header__menuLine:nth-child(2) {
+  top: 8px;
+  width: 20px;
+}
+
+.p-header__menuLine:nth-child(2).active {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.p-header__menuLine:nth-child(3) {
+  bottom: 0;
+  width: 16px;
+}
+
+.p-header__menuLine:nth-child(3).active {
+  width: 24px;
+  top: 8px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .p-header__onlineStore {
   font-family: 'Quicksand', serif;
-  width: 195px;
-  background-color: #24a2b3;
-  background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/ico_cart_small.png?raw=true);
-  background-position: top 30px left 23px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  width: 100vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__onlineStore {
+    background-color: #24a2b3;
+    background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/ico_cart_small.png?raw=true);
+    width: 195px;
+    background-position: top 30px left 23px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
 }
 
 .p-header__onlineStore:hover {
@@ -435,24 +607,36 @@ img {
 
 .p-header__onlineStore a {
   font-size: 1.5rem;
-  font-weight: 500;
   line-height: 80px;
   display: block;
-  padding-left: 56px;
   text-decoration: none;
   letter-spacing: .05em;
   color: #fff;
   -webkit-transition: all .4s;
   transition: all .4s;
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__onlineStore a {
+    padding-left: 30px;
+    border-bottom: none;
+  }
 }
 
 .p-header__contact {
-  width: 175px;
-  background-color: #aa8f7b;
-  background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/ico_mail.png?raw=true);
-  background-position: top 34px left 26px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  width: 100vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__contact {
+    width: 175px;
+    background-color: #aa8f7b;
+    background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/ico_mail.png?raw=true);
+    background-position: top 34px left 26px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
 }
 
 .p-header__contact:hover {
@@ -465,10 +649,18 @@ img {
   font-size: 1.5rem;
   line-height: 80px;
   display: block;
-  padding-left: 57px;
+  padding-bottom: 0;
   text-decoration: none;
   letter-spacing: .05em;
   color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-header__contact a {
+    padding-left: 35px;
+    border-bottom: none;
+  }
 }
 
 /* ================================================================
