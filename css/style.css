@@ -1069,12 +1069,19 @@ img {
 }
 
 .p-recruit {
-  width: 1500px;
-  height: 430px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 80px 0 0;
+  padding: 40px 20px;
   text-align: center;
   background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/bg_recruit.jpg?raw=true);
+  background-position: center;
+}
+
+@media screen and (min-width: 560px) {
+  .p-recruit {
+    height: 430px;
+    padding: 80px 0;
+  }
 }
 
 .p-recruit__title {
@@ -1091,9 +1098,16 @@ img {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2;
-  margin-bottom: 54px;
+  margin-bottom: 30px;
   letter-spacing: .2em;
   color: #fff;
+}
+
+@media screen and (min-width: 560px) {
+  .p-recruit__text p {
+    margin-bottom: 54px;
+    padding: 81px 0 100px;
+  }
 }
 
 .p-recruit__button {
