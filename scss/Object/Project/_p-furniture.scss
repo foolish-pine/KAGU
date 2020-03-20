@@ -3,110 +3,173 @@
    ================================================================ */
 
 #furniture {
-  display: block;
-  margin-top: -80px;
-  padding-top: 80px;
+	display: block;
+	margin-top: -80px;
+	padding-top: 80px;
 }
 
 .p-furniture {
-  width: 1500px;
-  margin: 0 auto;
+	max-width: 1500px;
+	margin: 0 auto;
 
-  &__wrapper {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 80px 0 20px;
-  }
+	&__wrapper {
+		width: 90%;
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 38px 0;
 
-  &__title {
-    margin-bottom: 47px;
+		@include mq(tab) {
+			padding: 88px 0 100px;
+		}
+	}
 
-    &::after {
-      content: 'FURNITURE';
-    }
-  }
+	&__title {
+		margin-bottom: 60px;
 
-  &__twoColumnsContainer {
-    display: grid;
-    margin-bottom: 80px;
+		@include mq(tab) {
+			margin-bottom: 47px;
+		}
 
-    gap: 80px 60px;
-    grid-template-columns: 1fr 1fr;
-  }
+		&::after {
+			content: 'FURNITURE';
+		}
+	}
 
-  &__twoColumnsImage {
-    width: 610px;
-    height: 610px;
-  }
+	&__twoColumns {
+		display: grid;
+		gap: 60px;
+		padding-bottom: 60px;
 
-  &__twoColumnsText {
-    width: 610px;
-    padding-top: 188px;
+		@include mq(tab) {
+			gap: 78px;
+			padding-bottom: 80px;
+		}
+	}
 
-    h3 {
-      margin-bottom: 25px;
-      font-size: 2.4rem;
-      font-weight: 500;
-      color: $color-text;
-      letter-spacing: .05em;
-    }
+	&__twoColumnsContent {
+		@include mq(tab) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 
-    p {
-      margin-bottom: 56px;
-      font-size: 1.5rem;
-      letter-spacing: .06em;
-      line-height: 2;
-    }
-  }
+		&:nth-child(even) {
+			@include mq(tab) {
+				flex-direction: row-reverse;
+			}
+		}
 
-  &__twoColumnsButton {
-    a {
-      &:hover {
-        background-color: $color-button-hover;
-        color: #fff;
-        transition: all .4s;
-      }
-    }
-  }
+		img {
+			margin-bottom: 28px;
 
-  &__threeColumns {
-    display: grid;
-    margin-bottom: 79px;
+			@include mq(tab) {
+				width: calc((610/1280) * 100%);
+				margin-bottom: 0;
+			}
+		}
+	}
 
-    gap: 70px;
-    grid-template-columns: 1fr 1fr 1fr;
+	&__twoColumnsText {
+		@include mq(tab) {
+			width: calc((610/1280) * 100%);
+		}
 
-    h3 {
-      margin-bottom: 15px;
-      font-size: 2rem;
-      font-weight: 500;
-      color: $color-text;
-      letter-spacing: .05em;
-    }
+		h3 {
+			margin-bottom: 31px;
+			color: $color-text;
+			font-weight: bold;
+			font-size: 2rem;
+			letter-spacing: .05em;
 
-    p {
-      margin-bottom: 54px;
-      font-size: 1.5rem;
-      font-weight: 400;
-      text-align: justify;
-      letter-spacing: .05em;
-      line-height: 2;
-    }
-  }
+			@include mq(tab) {
+				margin-bottom: 25px;
+				font-size: 2.4rem;
+			}
+		}
 
-  &__threeColumnsImage {
-    margin-bottom: 27px;
-  }
+		p {
+			line-height: 2;
+			margin-bottom: 60px;
+			font-size: 1.5rem;
+			letter-spacing: .06em;
 
-  &__threeColumnsButton {
-    margin: 0 auto;
+			@include mq(tab) {
+				margin-bottom: 54px;
+			}
+		}
+	}
 
-    a {
-      &:hover {
-        background-color: $color-button-hover;
-        color: #fff;
-        transition: all .4s;
-      }
-    }
-  }
+	&__twoColumnsButton {
+		margin: 0 auto;
+
+		@include mq(tab) {
+			margin: 0;
+		}
+
+		a {
+			&:hover {
+				color: #fff;
+				background-color: $color-button-hover;
+				transition: all .4s;
+			}
+		}
+	}
+
+	&__threeColumns {
+		display: grid;
+		gap: 60px;
+
+		@include mq(tab) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include mq(pc-md) {
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 70px;
+		}
+	}
+
+	&__threeColumnsContent {
+		img {
+			margin-bottom: 28px;
+		}
+	}
+
+	&__threeColumnsText {
+		h3 {
+			margin-bottom: 31px;
+			color: $color-text;
+			font-weight: medium;
+			font-size: 2.4rem;
+			letter-spacing: .05em;
+
+			@include mq(tab) {
+				margin-bottom: 17px;
+				font-size: 2rem;
+			}
+		}
+
+		p {
+			line-height: 2;
+			margin-bottom: 30px;
+			font-size: 1.5rem;
+			letter-spacing: .05em;
+
+			@include mq(tab) {
+				margin-bottom: 52px;
+			}
+		}
+	}
+
+	&__threeColumnsButton {
+		margin: 0 auto;
+
+		a {
+			&:hover {
+				color: #fff;
+				background-color: $color-button-hover;
+				transition: all .4s;
+			}
+		}
+	}
 }
