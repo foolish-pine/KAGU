@@ -586,8 +586,14 @@ img {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 55px;
   background-color: #f7f6f5;
+}
+
+@media screen and (min-width: 560px) {
+  .p-news {
+    padding-bottom: 100px;
+  }
 }
 
 .p-news__wrapper {
@@ -595,9 +601,16 @@ img {
   z-index: 50;
   width: 90%;
   max-width: 960px;
-  margin: -5.3% auto 0;
-  padding: 5% 3.75%;
+  margin: -40px auto 0;
+  padding: 40px 20px;
   background-color: #fff;
+}
+
+@media screen and (min-width: 560px) {
+  .p-news__wrapper {
+    margin: -80px auto 0;
+    padding: 76px 80px 82px;
+  }
 }
 
 .p-news__title {
@@ -606,7 +619,7 @@ img {
 
 @media screen and (min-width: 560px) {
   .p-news__title {
-    margin-bottom: 53px;
+    margin-bottom: 54px;
   }
 }
 
@@ -617,7 +630,8 @@ img {
 .p-news__articleContainer {
   display: -ms-grid;
   display: grid;
-  padding: 0 20px;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 560px) {
@@ -625,50 +639,47 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 40px;
-    gap: 5.5% 7.5%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    gap: 42px 60px;
+    margin-bottom: 56px;
   }
 }
 
 .p-news__articleContainer a {
-  margin-bottom: 30px;
   text-decoration: none;
 }
 
 .p-news__articleDate {
   margin-bottom: 15px;
-  white-space: nowrap;
 }
 
 .p-news__articleDate time {
   display: inline-block;
-  font-family: 'Quicksand', serif;
-  font-size: 1.4rem;
-  font-weight: bold;
+  margin-right: 15px;
   color: #333;
+  font-family: 'Quicksand', serif;
+  font-weight: bold;
+  font-size: 1.4rem;
   letter-spacing: .05em;
 }
 
 .p-news__articleDate p {
   display: inline-block;
-  margin-left: 15px;
   padding: 1px 10px;
-  background-color: #24a2b3;
-  font-size: 1.2rem;
-  font-weight: medium;
   color: #fff;
+  background-color: #24a2b3;
+  font-weight: medium;
+  font-size: 1.2rem;
   letter-spacing: .05em;
 }
 
 .p-news__articleHeadline {
-  font-size: 1.4rem;
-  font-weight: medium;
-  color: #333;
-  letter-spacing: .05em;
   line-height: 1.71;
-  text-align: justify;
+  color: #333;
+  font-weight: medium;
+  font-size: 1.4rem;
+  letter-spacing: .05em;
 }
 
 .p-news__button {
@@ -676,8 +687,8 @@ img {
 }
 
 .p-news__button a:hover {
-  background-color: #333;
   color: #fff;
+  background-color: #333;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
@@ -705,7 +716,7 @@ img {
 
 @media screen and (min-width: 560px) {
   .p-furniture__wrapper {
-    padding: 88px 0 100px;
+    padding: 81px 0 100px;
   }
 }
 
