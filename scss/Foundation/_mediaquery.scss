@@ -17,13 +17,3 @@ $breakpoints : (
     @content;
   }
 }
-
-// @media screen and (min-width: $sp){	
-//   .br--pc { display:block; }
-//   .br--sp { display:none; }
-// }
-
-// @media screen and (max-width: $sp){	
-//   .br--pc { display:none; }
-//   .br--sp { display:block; }
-// }

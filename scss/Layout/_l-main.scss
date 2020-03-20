@@ -4,5 +4,10 @@
 
 .l-main {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 60px;
+
+  @include mq(pc-lg) {
+    padding-top: 80px;
+  }
+
 }
