@@ -9,7 +9,7 @@
   letter-spacing: .15em;
   line-height: 1;
 
-  @include mq(sp) {
+  @include mq(tab) {
     font-size: 2.4rem;
     letter-spacing: .14em;
   }
@@ -19,11 +19,11 @@
     margin-top: 17px;
     font-family: 'Quicksand', serif;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: bold;
     color: $color-text-titleEnglish;
     letter-spacing: .05em;
 
-    @include mq(sp) {
+    @include mq(tab) {
       font-size: 1.5rem;
     }
   }

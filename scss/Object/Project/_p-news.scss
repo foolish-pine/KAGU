@@ -28,7 +28,7 @@
   &__title {
     margin-bottom: 30px;
 
-    @include mq(sp) {
+    @include mq(tab) {
       margin-bottom: 53px;
     }
 
@@ -41,7 +41,7 @@
     display: grid;
     padding: 0 20px;
 
-    @include mq(sp) {
+    @include mq(tab) {
       justify-content: space-between;
       margin-bottom: 40px;
       gap: 5.5% 7.5%;
@@ -62,7 +62,7 @@
       display: inline-block;
       font-family: 'Quicksand', serif;
       font-size: 1.4rem;
-      font-weight: 700;
+      font-weight: bold;
       color: $color-text;
       letter-spacing: .05em;
     }
@@ -73,7 +73,7 @@
       padding: 1px 10px;
       background-color: $color-news-tag;
       font-size: 1.2rem;
-      font-weight: 500;
+      font-weight: medium;
       color: #fff;
       letter-spacing: .05em;
     }
@@ -81,7 +81,7 @@
 
   &__articleHeadline {
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: medium;
     color: $color-text;
     letter-spacing: .05em;
     line-height: 1.71;

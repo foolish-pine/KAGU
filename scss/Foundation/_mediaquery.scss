@@ -2,17 +2,17 @@
   メディアクエリ
    ================================================================ */
 
-$pc: 1024px;
-$tab: 960px;
-$sp: 560px;
+$pc-lg: 1024px;
+$pc-md: 960px;
+$tab: 560px;
 
 $breakpoints : (
-  "pc":"screen and (min-width:1024px)",
-  "tab":"screen and (min-width:960px)",
-  "sp":"screen and (min-width:560px)"
+  "pc-lg":"screen and (min-width:1024px)",
+  "pc-md":"screen and (min-width:960px)",
+  "tab":"screen and (min-width:560px)"
 );
 
-@mixin mq($breakpoint:sp){
+@mixin mq($breakpoint:tab){
   @media #{map-get($breakpoints, $breakpoint)}{
     @content;
   }
