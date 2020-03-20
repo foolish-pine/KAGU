@@ -47,8 +47,7 @@
 		margin-bottom: 30px;
 
     @include mq(tab) {
-			width: 380px;
-			height: 200px;
+			max-width: 380px;
 			margin-bottom: 0;
 		}
 	}
