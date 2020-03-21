@@ -13,10 +13,10 @@
 	margin: 0 auto;
 
 	&__wrapper {
-		width: 90%;
+		width: calc((335/375) * 100%);;
 		max-width: 1280px;
 		margin: 0 auto;
-		padding: 38px 0;
+		padding: 35px 0 40px;
 
 		@include mq(tab) {
 			padding: 81px 0 100px;
@@ -24,7 +24,7 @@
 	}
 
 	&__title {
-		margin-bottom: 60px;
+		margin-bottom: 58px;
 
 		@include mq(tab) {
 			margin-bottom: 47px;
@@ -39,6 +39,12 @@
 		display: grid;
 		gap: 60px;
 		padding-bottom: 60px;
+
+		:nth-of-type(2) {
+			p {
+				margin-bottom: 23px;
+			}
+		}
 
 		@include mq(tab) {
 			gap: 78px;
@@ -60,7 +66,7 @@
 		}
 
 		img {
-			margin-bottom: 28px;
+			margin-bottom: 18px;
 
 			@include mq(tab) {
 				width: calc((610/1280) * 100%);
@@ -75,7 +81,7 @@
 		}
 
 		h3 {
-			margin-bottom: 31px;
+			margin-bottom: 17px;
 			color: $color-text;
 			font-weight: bold;
 			font-size: 2rem;
@@ -89,7 +95,7 @@
 
 		p {
 			line-height: 2;
-			margin-bottom: 60px;
+			margin-bottom: 52px;
 			font-size: 1.5rem;
 			letter-spacing: .06em;
 
@@ -131,27 +137,27 @@
 
 	&__threeColumnsContent {
 		img {
-			margin-bottom: 28px;
+			margin-bottom: 18px;
 		}
 	}
 
 	&__threeColumnsText {
 		h3 {
-			margin-bottom: 31px;
+			margin-bottom: 17px;
 			color: $color-text;
 			font-weight: medium;
-			font-size: 2.4rem;
+			font-size: 2rem;
 			letter-spacing: .05em;
-
+			
 			@include mq(tab) {
 				margin-bottom: 17px;
-				font-size: 2rem;
+				font-size: 2.4rem;
 			}
 		}
 
 		p {
 			line-height: 2;
-			margin-bottom: 30px;
+			margin-bottom: 23px;
 			font-size: 1.5rem;
 			letter-spacing: .05em;
 

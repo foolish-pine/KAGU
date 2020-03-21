@@ -5,29 +5,38 @@
 .c-button {
   border: 2px solid $color-button-border;
   width: 220px;
-  height: 53px;
+  height: 50px;
   background-color: #fff;
   text-align: center;
+  
+  @include mq(tab) {
+    height: 53px;
+  }
 
   a {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: $color-button-text;
     text-decoration: none;
     letter-spacing: .1em;
-    line-height: 49px;
+    line-height: 45px;
     transition: all .4s;
+    
+    @include mq(tab) {
+      font-size: 1.5rem;
+		}
   }
 }
 
 .c-button--clear {
   @extend .c-button;
+  height: 45px;
   border: 2px solid #fff;
   background-color: rgba(0, 0, 0, 0);
 
   a {
-    font-size: 1.4rem;
+    line-height: 41px;
     color: #fff;
   }
 }

@@ -6,7 +6,7 @@
 .p-footer {
   width: 100%;
   margin: 0 auto;
-  // padding: 30px 0;
+  padding: 31px 0;
   background-color: $bg-color-footer;
   
   @include mq(tab) {
@@ -43,19 +43,20 @@
 
   &__logo-address-tel {
     text-align: center;
-    padding: 14px 0 25px;
+    padding-bottom: 26px;
     border-bottom: 1px solid #555;
   }
 
   &__logo {
-    margin-bottom: 6px;
-    
+    width: 110px;
+    margin: 0 auto 14px;
+
     @include mq(tab) {
       margin-bottom: 20px;
     }
 
     a {
-      display: inline-block;
+      display: block;
     }
 
     img {
@@ -68,7 +69,7 @@
   }
 
   &__address {
-    margin-bottom: 15px;
+    margin-bottom: 19px;
 
     @include mq(tab) {
       margin-bottom: 19px;
@@ -120,7 +121,7 @@
 
   &__item {
     padding-left: 20px;
-    line-height: 54px;
+    line-height: 52px;
     border-bottom: 1px solid #555;
     color: #fff;
 
@@ -192,6 +193,7 @@
   &__subList {
     list-style: none;
     display: none;
+    padding: 2px 0 11px;
     
     @include mq(tab) {
       padding-top: 8px;
@@ -199,7 +201,7 @@
   }
 
   &__subItem {
-    line-height: 36px;
+    line-height: 33px;
     
     @include mq(tab) {
       margin-bottom: 6px;
@@ -207,21 +209,28 @@
     }
 
     a {
-      font-size: 1.2rem;
-      font-weight: 400;
+      font-size: 1.3rem;
       color: #fff;
       text-decoration: none;
       letter-spacing: .05em;
     }
   }
 
+  &__list--right {
+    
+    .p-footer__item {
+      padding-left: 28px;
+      line-height: 54px;
+    }
+  }
+
   &__PrivacyPolicy-copyright {
     text-align: center;
-    padding: 21px 0 33px;
+    padding: 15px 0 33px;
   }
 
   &__privacyPolicy {
-    margin-bottom: 31px;
+    margin-bottom: 24px;
 
     a {
       display: block;
