@@ -18,7 +18,7 @@
 		margin: 0 auto;
 		padding: 35px 0 40px;
 
-		@include mq(tab) {
+		@include mq(pc-md) {
 			padding: 81px 0 100px;
 		}
 ;
@@ -27,7 +27,7 @@
 	&__title {
 		margin-bottom: 58px;
 
-		@include mq(tab) {
+		@include mq(pc-md) {
 			margin-bottom: 45px;
 		}
 
@@ -88,7 +88,7 @@
 			font-size: 2rem;
 			letter-spacing: .05em;
 
-			@include mq(tab) {
+			@include mq(pc-md) {
 				margin-bottom: 25px;
 				font-size: 2.4rem;
 			}
@@ -100,7 +100,7 @@
 			font-size: 1.5rem;
 			letter-spacing: .06em;
 
-			@include mq(tab) {
+			@include mq(pc-md) {
 				margin-bottom: 54px;
 			}
 		}
@@ -154,7 +154,7 @@
 			font-size: 2rem;
 			letter-spacing: .05em;
 
-			@include mq(tab) {
+			@include mq(pc-md) {
 				margin-bottom: 17px;
 			}
 		}
@@ -165,7 +165,7 @@
 			font-size: 1.5rem;
 			letter-spacing: .05em;
 
-			@include mq(tab) {
+			@include mq(pc-md) {
 				margin-bottom: 52px;
 			}
 		}

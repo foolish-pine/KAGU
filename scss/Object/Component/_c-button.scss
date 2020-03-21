@@ -9,7 +9,7 @@
   background-color: #fff;
   text-align: center;
   
-  @include mq(tab) {
+  @include mq(pc-md) {
     height: 53px;
   }
 
@@ -20,11 +20,12 @@
     color: $color-button-text;
     text-decoration: none;
     letter-spacing: .1em;
-    line-height: 45px;
+    line-height: 46px;
     transition: all .4s;
     
-    @include mq(tab) {
+    @include mq(pc-md) {
       font-size: 1.5rem;
+      line-height: 49px;
 		}
   }
 }
@@ -35,8 +36,18 @@
   border: 2px solid #fff;
   background-color: rgba(0, 0, 0, 0);
 
+  @include mq(pc-md) {
+    height: 53px;
+  } 
+
   a {
     line-height: 41px;
     color: #fff;
+
+    @include mq(pc-md) {
+      font-size: 1.4rem;
+      line-height: 49px;
+    }
   }
+
 }

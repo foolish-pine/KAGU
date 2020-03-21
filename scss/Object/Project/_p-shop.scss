@@ -19,8 +19,8 @@
 		margin: 0 auto;
 		padding: 40px 0 43px;
 
-    @include mq(tab) {
-			padding: 80px 0 40px;
+		@include mq(pc-md) {
+			padding: 80px 0 96px;
 		}
 	}
 
@@ -38,15 +38,15 @@
 
 	&__textContainer {
 		@include mq(tab) {
+			width: calc((829/1280) * 100%);
 			margin-left: 70px;
 		}
 	}
 
 	&__image {
-		width: 100%;
 		margin-bottom: 24px;
 
-    @include mq(tab) {
+		@include mq(tab) {
 			max-width: 380px;
 			margin-bottom: 0;
 		}
@@ -60,7 +60,7 @@
 		font-size: 2rem;
 		letter-spacing: .05em;
 
-      @include mq(tab) {
+		@include mq(pc-md) {
 			margin-bottom: 21px;
 		}
 	}
@@ -71,7 +71,8 @@
 		color: $color-text;
 		font-size: 1.5rem;
 		letter-spacing: .05em;
-    @include mq(tab) {
+
+		@include mq(pc-md) {
 			margin-bottom: 45px;
 		}
 	}

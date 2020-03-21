@@ -9,7 +9,7 @@
   letter-spacing: .15em;
   line-height: 1;
 
-  @include mq(tab) {
+  @include mq(pc-md) {
     font-size: 2.4rem;
     letter-spacing: .14em;
   }
@@ -23,7 +23,7 @@
     color: $color-text-titleEnglish;
     letter-spacing: .05em;
 
-    @include mq(tab) {
+    @include mq(pc-md) {
       font-size: 1.5rem;
       margin-top: 18px;
     }

@@ -15,7 +15,7 @@
 	padding-bottom: 55px;
 	background-color: $bg-color-news;
 
-	@include mq(tab) {
+	@include mq(pc-md) {
 		padding-bottom: 100px;
 	}
 
@@ -29,7 +29,7 @@
 		box-shadow: 0 3px 10px rgba(0, 0, 0, .03);
 		background-color: #fff;
 
-		@include mq(tab) {
+		@include mq(pc-md) {
 			margin: -80px auto 0;
 			padding: 76px 80px 80px;
 		}
@@ -38,7 +38,7 @@
 	&__title {
 		margin-bottom: 24px;
 
-		@include mq(tab) {
+		@include mq(pc-md) {
 			margin-bottom: 53px;
 		}
 
@@ -67,7 +67,7 @@
 	&__articleDate {
 		margin-bottom: 12px;
 
-		@include mq(tab) {
+		@include mq(pc-md) {
 			margin-bottom: 14px;
 		}
 
@@ -90,7 +90,7 @@
 			font-size: 1.1rem;
 			letter-spacing: .05em;
 
-			@include mq(tab) {
+			@include mq(pc-md) {
 				font-size: 1.2rem;
 			}
 		}
