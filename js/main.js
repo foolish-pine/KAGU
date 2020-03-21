@@ -7,6 +7,26 @@
 // ---------------------------------------------
 
 // ヘッダー
+
+//ウィンドウのリサイズ後にリロードさせる
+$(function(){
+  var timer = false;
+  var prewidth = $(window).width();
+  $(window).resize(function() {
+      if (timer !== false) {
+          clearTimeout(timer);
+      }
+      timer = setTimeout(function() {
+          var nowWidth = $(window).width();
+          if(prewidth !== nowWidth){
+      // リロード
+              location.reload();
+          }
+          prewidth = nowWidth;
+      }, 200);
+  });
+});
+
 $(function () {
   $('.p-header__menu').on('click', function () {
     $('.p-header__menuLine').stop(true).toggleClass('active');
