@@ -8,7 +8,7 @@
 
 // ヘッダー
 
-//ウィンドウのリサイズ後にリロードさせる
+//ウィンドウのリサイズ後にリロードする
 $(function () {
   var timer = false;
   var prewidth = $(window).width();
@@ -19,7 +19,6 @@ $(function () {
     timer = setTimeout(function () {
       var nowWidth = $(window).width();
       if (prewidth !== nowWidth) {
-        // リロード
         location.reload();
       }
       prewidth = nowWidth;
