@@ -6,6 +6,8 @@
 // ハンバーガーメニュー
 // ---------------------------------------------
 
+// ヘッダー
+
 //ウィンドウのリサイズ後にリロードさせる
 $(function(){
   var timer = false;
@@ -29,6 +31,14 @@ $(function () {
   $('.p-header__menu').on('click', function () {
     $('.p-header__menuLine').stop(true).toggleClass('active');
     $('.p-header__nav').stop(true).fadeToggle();
+  });
+});
+
+// フッター
+$(function () {
+  $('.p-footer__subNav').on('click', function () {
+    $('.p-footer__menuLine').stop(true).toggleClass('active');
+    $('.p-footer__subList').stop(true).slideToggle();
   });
 });
 

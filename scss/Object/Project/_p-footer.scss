@@ -4,18 +4,24 @@
 
 
 .p-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 1500px;
+  width: 100%;
   margin: 0 auto;
-  padding: 47px 110px;
+  // padding: 30px 0;
   background-color: $bg-color-footer;
+  
+  @include mq(tab) {
+    display: flex;
+    max-width: 1500px;
+    justify-content: space-between;
+    padding: 47px 110px;
+  }
 
   &__pagetop {
     position: relative;
-    width: 1500px;
+    max-width: 1500px;
     height: 0;
     margin: 0 auto;
+    display: none;
 
     a {
       position: absolute;
@@ -35,12 +41,38 @@
     }
   }
 
+  &__logo-address-tel {
+    text-align: center;
+    padding: 14px 0 25px;
+    border-bottom: 1px solid #555;
+  }
+
   &__logo {
-    margin-bottom: 16px;
+    margin-bottom: 6px;
+    
+    @include mq(tab) {
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      display: block;
+    }
+    
+    @include mq(tab) {
+      margin-bottom: 16px;
+    }
   }
 
   &__address {
-    margin-bottom: 19px;
+    margin-bottom: 15px;
+
+    @include mq(tab) {
+      margin-bottom: 19px;
+    }
 
     p {
       font-size: 1.4rem;
@@ -51,12 +83,12 @@
   }
 
   &__tel {
-    margin-bottom: 91px;
+    // margin-bottom: 91px;
 
     p {
       font-family: 'Quicksand', serif;
       font-size: 2.4rem;
-      font-weight: 500;
+      font-weight: medium;
       color: #fff;
       letter-spacing: .05em;
 
@@ -66,46 +98,113 @@
     }
   }
 
-  &__copyright {
-    p {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #fff;
-      letter-spacing: .05em;
+  &__nav {
+    
+    @include mq(tab) {
+      margin-top: 8px;
+    }
+    
+    @include mq(tab) {
+      display: flex;
     }
   }
 
-  &__nav {
-    display: flex;
-    margin-top: 8px;
-  }
-
   &__list {
-    margin-bottom: 10px;
-    margin-left: 100px;
     list-style: none;
+    
+    @include mq(tab) {
+      margin-bottom: 10px;
+      margin-left: 100px;
+    }
   }
 
   &__item {
-    margin-bottom: 16px;
+    padding-left: 20px;
+    line-height: 54px;
+    border-bottom: 1px solid #555;
+    color: #fff;
 
+    background-image: url(../../../image/img_arrow_white.png);
+    background-position: top 24px right 20px;
+    
+    @include mq(tab) {
+      margin-bottom: 16px;
+    }
+    
     a {
+      display: block;
       font-size: 1.4rem;
-      font-weight: 400;
-      color: #fff;
-      text-decoration: none;
-      letter-spacing: .05em;
+        letter-spacing: .05em;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #fff;
+    }
+  }
+
+  &__subNav {
+    display: block;
+      font-size: 1.4rem;
+        letter-spacing: .05em;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #fff;
+    background: none;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__menu {
+    height: 17px;
+    position: absolute;
+    right: 21px;
+    top: 18px;
+    width: 17px;
+    z-index: 101;
+
+    @include mq(pc-lg) {
+      display: none;
+    }
+  }
+
+  &__menuLine {
+    background: #fff;
+    display: block;
+    position: absolute;
+    transition:transform .3s;
+    
+    &:first-child {
+      height: 1px;
+      width: 17px;
+      top: 8px;
+    }
+
+    &:nth-child(2) {
+      height: 17px;
+      width: 1px;
+      left: 8px;
+
+      &.active {
+        transform: rotate(90deg);
+      }
     }
   }
 
   &__subList {
-    padding-top: 8px;
     list-style: none;
+    display: none;
+    
+    @include mq(tab) {
+      padding-top: 8px;
+    }
   }
 
   &__subItem {
-    margin-bottom: 6px;
-    padding-left: 10px;
+    line-height: 36px;
+    
+    @include mq(tab) {
+      margin-bottom: 6px;
+      padding-left: 10px;
+    }
 
     a {
       font-size: 1.2rem;
@@ -116,14 +215,27 @@
     }
   }
 
+  &__PrivacyPolicy-copyright {
+    text-align: center;
+    padding: 21px 0 33px;
+  }
+
   &__privacyPolicy {
+    margin-bottom: 31px;
+
     a {
       display: block;
       font-size: 1.2rem;
-      font-weight: 400;
       color: #fff;
-      text-align: right;
       text-decoration: none;
+      letter-spacing: .05em;
+    }
+  }
+
+  &__copyright {
+    p {
+      font-size: 1.2rem;
+      color: #fff;
       letter-spacing: .05em;
     }
   }
