@@ -9,21 +9,21 @@
 // ヘッダー
 
 //ウィンドウのリサイズ後にリロードさせる
-$(function(){
+$(function () {
   var timer = false;
   var prewidth = $(window).width();
-  $(window).resize(function() {
-      if (timer !== false) {
-          clearTimeout(timer);
+  $(window).resize(function () {
+    if (timer !== false) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(function () {
+      var nowWidth = $(window).width();
+      if (prewidth !== nowWidth) {
+        // リロード
+        location.reload();
       }
-      timer = setTimeout(function() {
-          var nowWidth = $(window).width();
-          if(prewidth !== nowWidth){
-      // リロード
-              location.reload();
-          }
-          prewidth = nowWidth;
-      }, 200);
+      prewidth = nowWidth;
+    }, 200);
   });
 });
 
@@ -36,11 +36,16 @@ $(function () {
 
 // フッター
 $(function () {
-  $('.p-footer__subNav').on('click', function () {
-    $('.p-footer__menuLine').stop(true).toggleClass('active');
-    $('.p-footer__subList').stop(true).slideToggle();
-  });
+  if ($(window).width() < 960) {
+    $(function () {
+      $('.p-footer__subNav').on('click', function () {
+        $('.p-footer__menuLine').stop(true).toggleClass('active');
+        $('.p-footer__subList').stop(true).slideToggle();
+      });
+    });
+  }
 });
+
 
 // ---------------------------------------------
 // スムーススクロール（ページ内リンク）

@@ -11,19 +11,23 @@
 .p-recruit {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 39px 20px;
   text-align: center;
   background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/bg_recruit.jpg?raw=true);
   background-position: center;
   
-  @include mq(tab) {
+  @include mq(pc-md) {
     height: 430px;
-    padding: 80px 0;
+    padding: 79px 0;
   }
 
   &__title {
-    margin-bottom: 43px;
+    margin-bottom: 30px;
     color: #fff;
+
+    @include mq(pc-md) {
+      margin-bottom: 43px;
+		}
 
     &::after {
       content: 'RECRUIT';
@@ -33,16 +37,17 @@
 
   &__text {
     p {
-      font-size: 1.6rem;
-      font-weight: 500;
-      line-height: 2;
-      margin-bottom: 30px;
+      font-size: 1.5rem;
+      font-weight: medium;
+      line-height: calc(32/15);
+      margin-bottom: 21px;
       letter-spacing: .2em;
       color: #fff;
       
       @include mq(tab) {
+        font-size: 1.6rem;
+        line-height: 2;
         margin-bottom: 54px;
-        padding: 81px 0 100px;
       }
     }
   }
