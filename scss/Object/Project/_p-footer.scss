@@ -41,7 +41,7 @@
     }
   }
 
-  &__logo-address-tel-copyright {
+  &__logo-address-tel {
     text-align: center;
     padding: 14px 0 25px;
     border-bottom: 1px solid #555;
@@ -98,15 +98,6 @@
     }
   }
 
-  &__copyright {
-    p {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #fff;
-      letter-spacing: .05em;
-    }
-  }
-
   &__nav {
     
     @include mq(tab) {
@@ -143,7 +134,6 @@
     a {
       display: block;
       font-size: 1.4rem;
-        font-weight: 400;
         letter-spacing: .05em;
         font-size: 1.4rem;
         text-decoration: none;
@@ -152,8 +142,15 @@
   }
 
   &__subNav {
+    display: block;
+      font-size: 1.4rem;
+        letter-spacing: .05em;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #fff;
     background: none;
     position: relative;
+    cursor: pointer;
   }
 
   &__menu {
@@ -163,7 +160,6 @@
     top: 18px;
     width: 17px;
     z-index: 101;
-    cursor: pointer;
 
     @include mq(pc-lg) {
       display: none;
@@ -219,14 +215,27 @@
     }
   }
 
+  &__PrivacyPolicy-copyright {
+    text-align: center;
+    padding: 21px 0 33px;
+  }
+
   &__privacyPolicy {
+    margin-bottom: 31px;
+
     a {
       display: block;
       font-size: 1.2rem;
-      font-weight: 400;
       color: #fff;
-      text-align: right;
       text-decoration: none;
+      letter-spacing: .05em;
+    }
+  }
+
+  &__copyright {
+    p {
+      font-size: 1.2rem;
+      color: #fff;
       letter-spacing: .05em;
     }
   }

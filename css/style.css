@@ -1353,7 +1353,7 @@ img {
   line-height: 30px;
 }
 
-.p-footer__logo-address-tel-copyright {
+.p-footer__logo-address-tel {
   text-align: center;
   padding: 14px 0 25px;
   border-bottom: 1px solid #555;
@@ -1412,13 +1412,6 @@ img {
   font-size: 2rem;
 }
 
-.p-footer__copyright p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #fff;
-  letter-spacing: .05em;
-}
-
 @media screen and (min-width: 560px) {
   .p-footer__nav {
     margin-top: 8px;
@@ -1462,7 +1455,6 @@ img {
 .p-footer__item a {
   display: block;
   font-size: 1.4rem;
-  font-weight: 400;
   letter-spacing: .05em;
   font-size: 1.4rem;
   text-decoration: none;
@@ -1470,8 +1462,15 @@ img {
 }
 
 .p-footer__subNav {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: .05em;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #fff;
   background: none;
   position: relative;
+  cursor: pointer;
 }
 
 .p-footer__menu {
@@ -1481,7 +1480,6 @@ img {
   top: 18px;
   width: 17px;
   z-index: 101;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1547,12 +1545,25 @@ img {
   letter-spacing: .05em;
 }
 
+.p-footer__PrivacyPolicy-copyright {
+  text-align: center;
+  padding: 21px 0 33px;
+}
+
+.p-footer__privacyPolicy {
+  margin-bottom: 31px;
+}
+
 .p-footer__privacyPolicy a {
   display: block;
   font-size: 1.2rem;
-  font-weight: 400;
   color: #fff;
-  text-align: right;
   text-decoration: none;
+  letter-spacing: .05em;
+}
+
+.p-footer__copyright p {
+  font-size: 1.2rem;
+  color: #fff;
   letter-spacing: .05em;
 }

@@ -16,7 +16,7 @@ $(function () {
 
 // フッター
 $(function () {
-  $('.p-footer__menu').on('click', function () {
+  $('.p-footer__subNav').on('click', function () {
     $('.p-footer__menuLine').stop(true).toggleClass('active');
     $('.p-footer__subList').stop(true).slideToggle();
   });
