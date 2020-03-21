@@ -373,15 +373,12 @@ img {
   .p-header {
     max-width: 1500px;
     height: 80px;
-    margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
 .p-header__logo {
   position: absolute;
+  z-index: 9990;
   top: 23px;
   left: 20px;
 }
@@ -424,7 +421,7 @@ img {
   margin-top: 60px;
   height: 100vh;
   width: 100%;
-  z-index: 101;
+  z-index: 9990;
   text-align: center;
 }
 
@@ -536,6 +533,10 @@ img {
   z-index: 101;
 }
 
+.p-header__menu:hover {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1024px) {
   .p-header__menu {
     display: none;
@@ -632,7 +633,7 @@ img {
   .p-header__contact {
     width: 175px;
     background-color: #aa8f7b;
-    background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/ico_mail.png?raw=true);
+    background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_mail.png?raw=true);
     background-position: top 34px left 26px;
     -webkit-transition: all .4s;
     transition: all .4s;
