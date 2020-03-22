@@ -6,8 +6,6 @@
 // ハンバーガーメニュー
 // ---------------------------------------------
 
-// ヘッダー
-
 //ウィンドウのリサイズ後にリロードする
 $(function () {
   var timer = false;
@@ -26,6 +24,7 @@ $(function () {
   });
 });
 
+// ヘッダー
 $(function () {
   $('.p-header__menu').on('click', function () {
     $('.p-header__menuLine').stop(true).toggleClass('active');
@@ -33,7 +32,17 @@ $(function () {
   });
 });
 
+$(function () {
+  $('.p-header__nav, .p-header__logo').on('click', function () {
+    if ($('.p-header__menuLine').hasClass('active')) {
+      $('.p-header__menuLine').stop(true).toggleClass('active');
+      $('.p-header__nav').stop(true).fadeToggle();
+    }
+  });
+});
+
 // フッター
+// ウィンドウサイズが959px以下のときのみ有効
 $(function () {
   if ($(window).width() < 960) {
     $(function () {

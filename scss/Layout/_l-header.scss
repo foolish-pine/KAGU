@@ -6,4 +6,8 @@
 	position: fixed;
 	z-index: 100;
 	width: 100%;
+
+	@media print {
+		position: static; //印刷時のみヘッダー固定解除
+	}
 }
