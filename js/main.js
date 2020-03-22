@@ -60,12 +60,10 @@ $(function () {
 // ---------------------------------------------
 $(function () {
   $('.js-smoothscroll').click(function () {
-    $('.p-header__menuLine').toggleClass('active');
-    $('.p-header__nav').fadeToggle();
     var speed = 500;
     href = $(this).attr("href"),
-      target = $(href == "#" || href == "" ? 'html' : href),
-      position = target.offset().top;
+    target = $(href == "#" || href == "" ? 'html' : href),
+    position = target.offset().top;
     $('html, body').animate({ scrollTop: position }, speed);
   });
 });

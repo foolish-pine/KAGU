@@ -2,23 +2,28 @@
   採用情報
    ================================================================ */
 
-#shop {
-  display: block;
-  margin-top: -80px;
-  padding-top: 80px;
-}
-
 .p-recruit {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 39px 20px;
-  text-align: center;
-  background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/bg_recruit.jpg?raw=true);
-  background-position: center;
-  
+  margin-top: -60px; //ナビゲーションからのリンク位置調整
+  padding-top: 60px; //ナビゲーションからのリンク位置調整
+
   @include mq(pc-md) {
-    height: 430px;
-    padding: 79px 0;
+    margin-top: -80px; //ナビゲーションからのリンク位置調整
+    padding-top: 80px; //ナビゲーションからのリンク位置調整
+  }
+  
+  &__wrapper {
+    padding: 39px 20px;
+    text-align: center;
+    background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/bg_recruit.jpg?raw=true);
+    background-position: center;
+    
+    @include mq(pc-md) {
+      height: 430px;
+      padding: 79px 0;
+      padding-bottom: 79px;
+    }
   }
 
   &__title {

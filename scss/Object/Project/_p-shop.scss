@@ -2,29 +2,32 @@
   販売店・オンラインストア
    ================================================================ */
 
-#shop {
-	display: block;
-	margin-top: -80px;
-	padding-top: 80px;
-}
-
 .p-shop {
 	max-width: 1500px;
 	margin: 0 auto;
-	background-color: $bg-color-shop;
-
+	margin-top: -60px; //ナビゲーションからのリンク位置調整
+  padding-top: 60px; //ナビゲーションからのリンク位置調整
+	
+	@include mq(pc-md) {
+		margin-top: -80px; //ナビゲーションからのリンク位置調整
+		padding-top: 80px; //ナビゲーションからのリンク位置調整
+	}
+	
 	&__wrapper {
-		width: calc((335/375) * 100%);
-		max-width: 1280px;
+		max-width: 1500px;
 		margin: 0 auto;
 		padding: 40px 0 43px;
-
+		background-color: $bg-color-shop;
+		
 		@include mq(pc-md) {
 			padding: 80px 0 96px;
 		}
 	}
-
+	
 	&__container {
+		width: calc((335/375) * 100%);
+		max-width: 1280px;
+		margin: 0 auto;
 		margin-bottom: 55px;
 
 		@include mq(tab) {

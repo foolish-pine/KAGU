@@ -11,7 +11,7 @@
   }
 
   @media print {
-		padding-top: 0; //印刷時のみヘッダー固定解除
+		padding-top: 0; //印刷時のみ、ヘッダー分の余白を0にする
 	}
 
 }
