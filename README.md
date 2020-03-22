@@ -1,9 +1,9 @@
 # 架空サイト「KAGU」
 
 ## このWebサイトについて
-https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true<br>
-https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true<br>
-https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true<br>
+![KAGU_pc_screenshot](https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true)<br>
+![KAGU_tab_screenshot](https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true)<br>
+![KAGU_spo_screenshot](https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true)<br>
 
 このサイトは架空の家具販売会社「KAGU」を題材としたものです。<br>
 なお、制作者が担当した部分はコーディングのみです。<br>
