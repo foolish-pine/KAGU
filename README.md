@@ -19,9 +19,7 @@ HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
 
 ## スクリーンショット
 <div align="center">
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true alt="属性" title="タイトル"　width="33%"><br>
+  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true"　width="33%"><br>
+  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width="33%"><br>
+  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width="33%">
 </div>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width="33%"><br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width="33%"><br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width="33%">
-
