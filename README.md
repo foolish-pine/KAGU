@@ -1,5 +1,4 @@
 # 架空サイト「KAGU」
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true">
 
 ## KAGUについて
 このサイトは架空の家具販売会社「KAGU」を題材としたものです。<br>
@@ -17,3 +16,6 @@
 
 ## 制作に使用した言語・環境
 HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
+
+## スクリーンショット
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true">
