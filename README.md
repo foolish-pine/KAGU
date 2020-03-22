@@ -26,10 +26,10 @@ HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
 ## スクリーンショット
 <br>
 <br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width=100%>
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width=500px>
 <br>
 <br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width=50%>
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width=500px>
 <br>
 <br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width=50%>
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width=500px>
