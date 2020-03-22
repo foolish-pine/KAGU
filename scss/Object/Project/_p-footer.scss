@@ -40,7 +40,7 @@
 			width: 120px;
 			height: 30px;
 			line-height: 30px;
-			color: #fff;
+			color: $color-footer-text;
 			background-color: $bg-color-footer;
 			font-family: 'Quicksand', serif;
 			font-weight: 500;
@@ -89,7 +89,7 @@
 
 		p {
 			line-height: 1.71;
-			color: #fff;
+			color: $color-footer-text;
 			font-size: 1.4rem;
 			letter-spacing: .05em;
 		}
@@ -97,8 +97,13 @@
 
 	&__tel {
 
+		a {
+			color: $color-footer-text;
+			text-decoration: none;
+		}
+
 		p {
-			color: #fff;
+			color: $color-footer-text;
 			font-family: 'Quicksand', serif;
 			font-weight: medium;
 			font-size: 2.4rem;
@@ -131,8 +136,8 @@
 	&__item {
 		line-height: 52px;
 		padding-left: 20px;
-		border-bottom: 1px solid #555;
-		color: #fff;
+		border-bottom: 1px solid $color-footer-border;
+		color: $color-footer-text;
 		background-image: url(../../../image/img_arrow_white.png);
 		background-position: top 24px right 20px;
 
@@ -146,7 +151,7 @@
 
 		a {
 			display: block;
-			color: #fff;
+			color: $color-footer-text;
 			font-size: 1.4rem;
 			font-size: 1.4rem;
 			text-decoration: none;
@@ -157,7 +162,7 @@
 	&__subNav {
 		display: block;
 		position: relative;
-		color: #fff;
+		color: $color-footer-text;
 		background: none;
 		font-size: 1.4rem;
 		font-size: 1.4rem;
@@ -182,7 +187,7 @@
 	&__menuLine {
 		display: block;
 		position: absolute;
-		background: #fff;
+		background: $color-footer-text;
 		transition: transform .3s;
 
     @include mq(pc-md) {
@@ -231,7 +236,7 @@
 		}
 
 		a {
-			color: #fff;
+			color: $color-footer-text;
 			font-size: 1.3rem;
 			text-decoration: none;
 			letter-spacing: .05em;
@@ -275,7 +280,7 @@
 
 		a {
 			display: block;
-			color: #fff;
+			color: $color-footer-text;
 			font-size: 1.2rem;
 			text-decoration: none;
 			letter-spacing: .05em;
@@ -284,7 +289,7 @@
 
 	&__copyright {
 		p {
-			color: #fff;
+			color: $color-footer-text;
 			font-size: 1.2rem;
 			letter-spacing: .05em;
 		}
