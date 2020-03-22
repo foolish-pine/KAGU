@@ -3,29 +3,29 @@
    =================================================================== */
 
 .c-sectionTitle {
-  font-size: 2rem;
-  color: $color-sectionTitle;
-  text-align: center;
+	line-height: 1;
+	color: $color-sectionTitle;
+	font-size: 2rem;
+	text-align: center;
   letter-spacing: .15em;
-  line-height: 1;
 
   @include mq(pc-md) {
-    font-size: 2.4rem;
-    letter-spacing: .14em;
-  }
+		font-size: 2.4rem;
+		letter-spacing: .14em;
+	}
 
-  &::after {
-    display: inline-block;
-    margin-top: 13px;
-    font-family: 'Quicksand', serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: $color-sectionTitleEnglish;
-    letter-spacing: .05em;
+	&::after {
+		display: inline-block;
+		margin-top: 13px;
+		color: $color-sectionTitleEnglish;
+		font-family: 'Quicksand', serif;
+		font-weight: bold;
+		font-size: 1.4rem;
+		letter-spacing: .05em;
 
     @include mq(pc-md) {
-      font-size: 1.5rem;
-      margin-top: 18px;
-    }
-  }
+			margin-top: 18px;
+			font-size: 1.5rem;
+		}
+	}
 }

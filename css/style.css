@@ -381,11 +381,11 @@ img {
   テキストコンポーネント
    =================================================================== */
 .c-sectionTitle {
-  font-size: 2rem;
+  line-height: 1;
   color: #333;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: .15em;
-  line-height: 1;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -398,17 +398,17 @@ img {
 .c-sectionTitle::after {
   display: inline-block;
   margin-top: 13px;
-  font-family: 'Quicksand', serif;
-  font-size: 1.4rem;
-  font-weight: bold;
   color: #aa8f7b;
+  font-family: 'Quicksand', serif;
+  font-weight: bold;
+  font-size: 1.4rem;
   letter-spacing: .05em;
 }
 
 @media print, screen and (min-width: 960px) {
   .c-sectionTitle::after {
-    font-size: 1.5rem;
     margin-top: 18px;
+    font-size: 1.5rem;
   }
 }
 
@@ -474,7 +474,7 @@ img {
 
 .p-header__nav {
   position: absolute;
-  background: rgba(41, 41, 41, 0.8);
+  background: rgba(41, 41, 41, 0.9);
   display: none;
   margin-top: 60px;
   z-index: 102;
@@ -771,7 +771,6 @@ img {
 @media print, screen and (min-width: 1024px) {
   .p-mainVisual__catch p span::before {
     content: "";
-    white-space: pre;
   }
 }
 
@@ -782,7 +781,7 @@ img {
   }
 }
 
-.slideshow {
+.p-mainVisual__slideshow {
   position: relative;
   overflow: hidden;
   max-width: 1500px;
@@ -791,25 +790,25 @@ img {
 }
 
 @media print, screen and (min-width: 560px) {
-  .slideshow {
+  .p-mainVisual__slideshow {
     height: 610px;
   }
 }
 
-.slideshow-slides {
+.p-mainVisual__slideshowSlides {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.slideshow-slides .slide {
+.p-mainVisual__slide {
   position: absolute;
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
 
-.slideshow-slides .slide img {
+.p-mainVisual__slide img {
   position: absolute;
   left: 50%;
   margin-left: -50%;
@@ -821,7 +820,7 @@ img {
   height: 100%;
 }
 
-.slideshow-indicator {
+.p-mainVisual__slideshowIndicator {
   position: absolute;
   z-index: 11;
   right: 0;
@@ -832,12 +831,12 @@ img {
 }
 
 @media print, screen and (min-width: 560px) {
-  .slideshow-indicator {
+  .p-mainVisual__slideshowIndicator {
     bottom: 100px;
   }
 }
 
-.slideshow-indicator a {
+.p-mainVisual__slideshowIndicator a {
   display: inline-block;
   overflow: hidden;
   width: 20px;
@@ -846,23 +845,23 @@ img {
   margin-left: 5px;
 }
 
-.slideshow-indicator a::before {
+.p-mainVisual__slideshowIndicator a::before {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet__white.png?raw=true);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet__white.png?raw=true);
   background-size: 10px 10px;
 }
 
-.slideshow-indicator a.active {
+.p-mainVisual__slideshowIndicator a.active {
   cursor: default;
 }
 
-.slideshow-indicator a.active::before {
+.p-mainVisual__slideshowIndicator a.active::before {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet_blue.png?raw=true);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet_blue.png?raw=true);
   background-size: 10px 10px;
 }
 
@@ -1301,7 +1300,7 @@ img {
 
 .p-shop__link::after {
   margin-left: 10px;
-  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/arrow.png?raw=true);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_arrow_black.png?raw=true);
 }
 
 /* ================================================================

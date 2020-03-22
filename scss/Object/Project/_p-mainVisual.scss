@@ -56,7 +56,6 @@
         @include mq(pc-lg) {
           &::before {
             content: "";
-            white-space: pre;
           }
         }
       }
@@ -67,31 +66,31 @@
       }
     }
   }
-}
 
-.slideshow {
-  position: relative;
-  overflow: hidden;
-  max-width: 1500px;
-  height: 360px;
-  background-color: #8c7665;
-
-  @include mq(tab) {
-    height: 610px;
+  &__slideshow {
+    position: relative;
+    overflow: hidden;
+    max-width: 1500px;
+    height: 360px;
+    background-color: #8c7665;
+  
+    @include mq(tab) {
+      height: 610px;
+    }
   }
-}
 
-.slideshow-slides {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  .slide {
+  &__slideshowSlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &__slide {
     position: absolute;
     overflow: hidden;
     width: 100%;
     height: 100%;
-
+    
     img {
       position: absolute;
       left: 50%;
@@ -102,48 +101,48 @@
       height: 100%;
     }
   }
-}
 
-.slideshow-indicator {
-  position: absolute;
-  z-index: 11;
-  right: 0;
-  bottom: 50px;
-  left: 0;
-  height: 20px;
-  text-align: center;
-
-  @include mq(tab) {
-    bottom: 100px;
-  }
-
-  a {
-    display: inline-block;
-    overflow: hidden;
-    width: 20px;
+  &__slideshowIndicator {
+    position: absolute;
+    z-index: 11;
+    right: 0;
+    bottom: 50px;
+    left: 0;
     height: 20px;
-    margin-right: 5px;
-    margin-left: 5px;
+    text-align: center;
   
-    &::before {
-      font-size: 0;
-      line-height: 0;
-      display: inline-block;
-      content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet__white.png?raw=true);
-      background-size: 10px 10px;
+    @include mq(tab) {
+      bottom: 100px;
     }
-  }
   
-  a {
-    &.active {
-      cursor: default; 
-
+    a {
+      display: inline-block;
+      overflow: hidden;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      margin-left: 5px;
+    
       &::before {
         font-size: 0;
         line-height: 0;
         display: inline-block;
-        content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet_blue.png?raw=true);
+        content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet__white.png?raw=true);
         background-size: 10px 10px;
+      }
+    }
+    
+    a {
+      &.active {
+        cursor: default; 
+  
+        &::before {
+          font-size: 0;
+          line-height: 0;
+          display: inline-block;
+          content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet_blue.png?raw=true);
+          background-size: 10px 10px;
+        }
       }
     }
   }
