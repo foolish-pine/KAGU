@@ -26,7 +26,7 @@ HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
 ## スクリーンショット
 <br>
 <br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width=500px>
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU.png?raw=true" width=500px>
 <br>
 <br>
 <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width=500px>
