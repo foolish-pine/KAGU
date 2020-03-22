@@ -1483,17 +1483,17 @@ img {
   letter-spacing: .05em;
 }
 
-.p-footer__tel a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .p-footer__tel p {
   color: #fff;
   font-family: 'Quicksand', serif;
   font-weight: medium;
   font-size: 2.4rem;
   letter-spacing: .05em;
+}
+
+.p-footer__tel p a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .p-footer__tel p span {
