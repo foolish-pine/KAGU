@@ -5,11 +5,12 @@
 なお、制作者が担当した部分はコーディングのみです。<br>
 デザインは作成しておりません。
 
-[制作者(foolish_pine)のTwitter]https://twitter.com/foolish_pine
+[制作者(foolish_pine)のTwitter](https://twitter.com/foolish_pine)
 
 ## デザインデータについて
 「KAGU」のデザインデータはHI-ROKI氏によって作成されました。<br>
 デザインデータは以下で公開されています。<br>
+
 [【無料配布】コーディング練習用　リッチデザインデータ「KAGU」](https://note.com/hi_roki/n/nb0c5f24f9107)
 
 ## 制作に使用した言語・環境
