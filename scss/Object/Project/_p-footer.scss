@@ -104,10 +104,11 @@
 			font-size: 2.4rem;
 			letter-spacing: .05em;
 			
-			a {
+			a { //iPhoneで電話番号が自動でリンクになるのを修正
 				color: $color-footer-text;
 				text-decoration: none;
 			}
+
 			span {
 				font-size: 2rem;
 			}

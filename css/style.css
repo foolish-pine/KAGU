@@ -771,7 +771,6 @@ img {
 @media print, screen and (min-width: 1024px) {
   .p-mainVisual__catch p span::before {
     content: "";
-    white-space: pre;
   }
 }
 
@@ -850,7 +849,7 @@ img {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet__white.png?raw=true);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet__white.png?raw=true);
   background-size: 10px 10px;
 }
 
@@ -862,7 +861,7 @@ img {
   font-size: 0;
   line-height: 0;
   display: inline-block;
-  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet_blue.png?raw=true);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet_blue.png?raw=true);
   background-size: 10px 10px;
 }
 
@@ -1301,7 +1300,7 @@ img {
 
 .p-shop__link::after {
   margin-left: 10px;
-  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/arrow.png?raw=true);
+  content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_arrow_black.png?raw=true);
 }
 
 /* ================================================================

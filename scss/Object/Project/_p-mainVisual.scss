@@ -56,7 +56,6 @@
         @include mq(pc-lg) {
           &::before {
             content: "";
-            white-space: pre;
           }
         }
       }
@@ -129,7 +128,7 @@
       font-size: 0;
       line-height: 0;
       display: inline-block;
-      content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet__white.png?raw=true);
+      content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet__white.png?raw=true);
       background-size: 10px 10px;
     }
   }
@@ -142,7 +141,7 @@
         font-size: 0;
         line-height: 0;
         display: inline-block;
-        content: url(https://github.com/foolish-pine/KAGU/blob/master/image/bullet_blue.png?raw=true);
+        content: url(https://github.com/foolish-pine/KAGU/blob/master/image/img_bullet_blue.png?raw=true);
         background-size: 10px 10px;
       }
     }
