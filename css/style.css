@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /*! ===============================================================
-  このCSSファイルはSassから生成されています！
-  編集しないようご注意ください。
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+このCSSファイルはSassから生成されています！
+編集しないようご注意ください。
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※
 ================================================================ */
 /* ===============================================================
   Foundation
@@ -303,9 +305,9 @@ img {
   ボタンコンポーネント
    =================================================================== */
 .c-button, .c-button--clear {
-  border: 2px solid #333;
   width: 220px;
   height: 50px;
+  border: 2px solid #333;
   background-color: #fff;
   text-align: center;
 }
@@ -318,21 +320,28 @@ img {
 
 .c-button a, .c-button--clear a {
   display: block;
-  font-size: 1.4rem;
-  font-weight: bold;
+  line-height: 46px;
   color: #333;
+  font-weight: bold;
+  font-size: 1.4rem;
   text-decoration: none;
   letter-spacing: .1em;
-  line-height: 46px;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
 
 @media print, screen and (min-width: 960px) {
   .c-button a, .c-button--clear a {
-    font-size: 1.5rem;
     line-height: 49px;
+    font-size: 1.5rem;
   }
+}
+
+.c-button a:hover, .c-button--clear a:hover {
+  color: #fff;
+  background-color: #333;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .c-button--clear {
@@ -350,13 +359,22 @@ img {
 .c-button--clear a {
   line-height: 41px;
   color: #fff;
+  -webkit-transition: none;
+  transition: none;
 }
 
 @media print, screen and (min-width: 960px) {
   .c-button--clear a {
-    font-size: 1.4rem;
     line-height: 49px;
+    font-size: 1.4rem;
   }
+}
+
+.c-button--clear a:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: none;
+  transition: none;
 }
 
 /* ===================================================================
@@ -851,22 +869,21 @@ img {
 /* ================================================================
   お知らせ
    ================================================================ */
-#news {
-  display: block;
-  margin-top: -160px;
-  padding-top: 160px;
-}
-
 .p-news {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: -100px;
+  padding-top: 100px;
   padding-bottom: 55px;
   background-color: #f7f6f5;
 }
 
 @media print, screen and (min-width: 960px) {
   .p-news {
+    margin: 0 auto;
+    margin-top: -160px;
+    padding-top: 160px;
     padding-bottom: 100px;
   }
 }
@@ -975,25 +992,21 @@ img {
   margin: 0 auto;
 }
 
-.p-news__button a:hover {
-  color: #fff;
-  background-color: #333;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
 /* ================================================================
   取り扱い家具
    ================================================================ */
-#furniture {
-  display: block;
-  margin-top: -80px;
-  padding-top: 80px;
-}
-
 .p-furniture {
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .p-furniture {
+    margin-top: -80px;
+    padding-top: 80px;
+  }
 }
 
 .p-furniture__wrapper {
@@ -1005,6 +1018,7 @@ img {
 
 @media print, screen and (min-width: 960px) {
   .p-furniture__wrapper {
+    margin: 0 auto;
     padding: 81px 0 100px;
   }
 }
@@ -1119,13 +1133,6 @@ img {
   }
 }
 
-.p-furniture__twoColumnsButton a:hover {
-  color: #fff;
-  background-color: #333;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
 .p-furniture__threeColumns {
   display: -ms-grid;
   display: grid;
@@ -1188,33 +1195,28 @@ img {
   margin: 0 auto;
 }
 
-.p-furniture__threeColumnsButton a:hover {
-  color: #fff;
-  background-color: #333;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
 /* ================================================================
   販売店・オンラインストア
    ================================================================ */
-#shop {
-  display: block;
-  margin-top: -80px;
-  padding-top: 80px;
-}
-
 .p-shop {
   max-width: 1500px;
   margin: 0 auto;
-  background-color: #f7f6f5;
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .p-shop {
+    margin-top: -80px;
+    padding-top: 80px;
+  }
 }
 
 .p-shop__wrapper {
-  width: calc((335/375) * 100%);
-  max-width: 1280px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px 0 43px;
+  background-color: #f7f6f5;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -1224,6 +1226,9 @@ img {
 }
 
 .p-shop__container {
+  width: calc((335/375) * 100%);
+  max-width: 1280px;
+  margin: 0 auto;
   margin-bottom: 55px;
 }
 
@@ -1302,15 +1307,21 @@ img {
 /* ================================================================
   採用情報
    ================================================================ */
-#shop {
-  display: block;
-  margin-top: -80px;
-  padding-top: 80px;
-}
-
 .p-recruit {
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .p-recruit {
+    margin-top: -80px;
+    padding-top: 80px;
+  }
+}
+
+.p-recruit__wrapper {
   padding: 39px 20px;
   text-align: center;
   background-image: url(https://github.com/foolish-pine/KAGU/blob/master/image/bg_recruit.jpg?raw=true);
@@ -1318,9 +1329,10 @@ img {
 }
 
 @media print, screen and (min-width: 960px) {
-  .p-recruit {
+  .p-recruit__wrapper {
     height: 430px;
     padding: 79px 0;
+    padding-bottom: 79px;
   }
 }
 

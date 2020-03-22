@@ -2,15 +2,16 @@
   取り扱い家具
    ================================================================ */
 
-#furniture {
-	display: block;
-	margin-top: -80px;
-	padding-top: 80px;
-}
-
 .p-furniture {
 	max-width: 1500px;
 	margin: 0 auto;
+	margin-top: -60px; //ナビゲーションからのリンク位置調整
+	padding-top: 60px; //ナビゲーションからのリンク位置調整
+
+	@include mq(pc-md) {
+		margin-top: -80px; //ナビゲーションからのリンク位置調整
+		padding-top: 80px; //ナビゲーションからのリンク位置調整
+	}
 
 	&__wrapper {
 		width: calc((335/375) * 100%);
@@ -19,6 +20,7 @@
 		padding: 35px 0 40px;
 
 		@include mq(pc-md) {
+			margin: 0 auto;
 			padding: 81px 0 100px;
 		}
 ;
@@ -112,14 +114,6 @@
 		@include mq(tab) {
 			margin: 0;
 		}
-
-		a {
-			&:hover {
-				color: #fff;
-				background-color: $color-button-hover;
-				transition: all .4s;
-			}
-		}
 	}
 
 	&__threeColumns {
@@ -173,13 +167,5 @@
 
 	&__threeColumnsButton {
 		margin: 0 auto;
-
-		a {
-			&:hover {
-				color: #fff;
-				background-color: $color-button-hover;
-				transition: all .4s;
-			}
-		}
 	}
 }
