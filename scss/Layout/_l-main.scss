@@ -10,4 +10,8 @@
     padding-top: 80px;
   }
 
+  @media print {
+		padding-top: 0; //印刷時のみヘッダー固定解除
+	}
+
 }

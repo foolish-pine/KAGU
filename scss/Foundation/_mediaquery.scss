@@ -7,9 +7,9 @@ $pc-md: 960px;
 $tab: 560px;
 
 $breakpoints : (
-  "pc-lg":"screen and (min-width:1024px)",
-  "pc-md":"screen and (min-width:960px)",
-  "tab":"screen and (min-width:560px)"
+  "pc-lg":"print,screen and (min-width:1024px)",
+  "pc-md":"print,screen and (min-width:960px)",
+  "tab":"print,screen and (min-width:560px)"
 );
 
 @mixin mq($breakpoint:tab){
