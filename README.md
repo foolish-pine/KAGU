@@ -17,4 +17,4 @@ https://note.com/hi_roki/n/nb0c5f24f9107
 HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
 
 ## スクリーンショット
-![KAGU_pc_screenshot](https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true)
+|![KAGU_pc_screenshot](https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true)|![KAGU_pc_screenshot](https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true)|![KAGU_pc_screenshot](https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true)|
