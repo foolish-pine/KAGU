@@ -5,18 +5,15 @@
 なお、制作者が担当した部分はコーディングのみです。<br>
 デザインは作成しておりません。
 
-ご質問等は制作者のTwitterまでご連絡ください。<br>
-https://twitter.com/foolish_pine
+[制作者(foolish_pine)のTwitter]https://twitter.com/foolish_pine
 
 ## デザインデータについて
 「KAGU」のデザインデータはHI-ROKI氏によって作成されました。<br>
 デザインデータは以下で公開されています。<br>
-https://note.com/hi_roki/n/nb0c5f24f9107
+[【無料配布】コーディング練習用　リッチデザインデータ「KAGU」](https://note.com/hi_roki/n/nb0c5f24f9107)
 
 ## 制作に使用した言語・環境
 HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
 
 ## スクリーンショット
-|PC|test|test|
-|---|---|---|
-|<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true">|<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true">|<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true">|
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width="33%"><img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width="33%"><img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width="33%">|
