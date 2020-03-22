@@ -19,7 +19,7 @@ HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
 
 ## スクリーンショット
 <div align="center">
-  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true"　width="800px"><br>
-  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width="800px"><br>
-  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width="800px">
+  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true"　width="500px"><br>
+  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width="500px"><br>
+  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width="500px">
 </div>
