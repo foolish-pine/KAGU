@@ -1,5 +1,5 @@
 # 架空サイト「KAGU」
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width=400px">
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" "width=400px">
 
 ## KAGUについて
 このサイトは架空の家具販売会社「KAGU」を題材としたものです。<br>
