@@ -9,6 +9,7 @@
 [制作者(foolish-pine)のTwitterはこちら](https://twitter.com/foolish_pine)
 <br>
 <br>
+<br>
 
 ## デザインデータについて
 「KAGU」のデザインデータはHI-ROKI氏によって作成されました。<br>
@@ -17,9 +18,11 @@
 [【無料配布】コーディング練習用　リッチデザインデータ「KAGU」](https://note.com/hi_roki/n/nb0c5f24f9107)
 <br>
 <br>
+<br>
 
 ## 制作に使用した言語・環境
 HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
+<br>
 <br>
 <br>
 
