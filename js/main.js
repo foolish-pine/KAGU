@@ -82,12 +82,11 @@ $(function () {
 // スライドショー
 // ---------------------------------------------
 $(function () {
-  $('.slideshow').each(function () {
+  $('.p-mainVisual__slideshow').each(function () {
     var $container = $(this),
-      $slideGroup = $container.find('.slideshow-slides'),
-      $slides = $slideGroup.find('.slide'),
-      $nav = $container.find('.slideshow-nav'),
-      $indicator = $container.find('.slideshow-indicator'),
+      $slideGroup = $container.find('.p-mainVisual__slideshowSlides'),
+      $slides = $slideGroup.find('.p-mainVisual__slide'),
+      $indicator = $container.find('.p-mainVisual__slideshowIndicator'),
 
       slideCount = $slides.length,
       indicatorHTML = '',

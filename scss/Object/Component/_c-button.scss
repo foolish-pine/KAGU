@@ -9,7 +9,7 @@
 	background-color: #fff;
 	text-align: center;
 
-  @include mq(pc-md) {
+	@include mq(pc-md) {
 		height: 53px;
 	}
 
@@ -38,18 +38,19 @@
 
 .c-button--clear {
 	@extend .c-button;
+
 	height: 45px;
 	border: 2px solid #fff;
 	background-color: rgba(0, 0, 0, 0);
 
-  @include mq(pc-md) {
+	@include mq(pc-md) {
 		height: 53px;
 	}
 
 	a {
 		line-height: 41px;
-    color: #fff;
-    transition: none;
+		color: #fff;
+		transition: none;
 
 		@include mq(pc-md) {
 			line-height: 49px;
