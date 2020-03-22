@@ -1483,6 +1483,11 @@ img {
   letter-spacing: .05em;
 }
 
+.p-footer__tel a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .p-footer__tel p {
   color: #fff;
   font-family: 'Quicksand', serif;
