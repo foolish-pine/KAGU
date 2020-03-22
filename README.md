@@ -5,7 +5,7 @@
 なお、制作者が担当した部分はコーディングのみです。<br>
 デザインは作成しておりません。
 
-[制作者(foolish_pine)のTwitter](https://twitter.com/foolish_pine)
+[制作者(foolish_pine)のTwitterはこちら](https://twitter.com/foolish_pine)
 
 ## デザインデータについて
 「KAGU」のデザインデータはHI-ROKI氏によって作成されました。<br>
@@ -17,4 +17,4 @@
 HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
 
 ## スクリーンショット
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width="33%"><img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width="33%"><img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width="33%">|
+<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width="33%">  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width="33%">  <img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_pc.png?raw=true" width="33%">
