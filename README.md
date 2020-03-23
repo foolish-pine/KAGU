@@ -6,7 +6,8 @@
 **なお、制作者が担当した部分はコーディングのみです。<br>
 デザインは作成しておりません。**
 
-[制作者(foolish-pine)のTwitterはこちら](https://twitter.com/foolish_pine)
+ご質問等は制作者のTwitterへお願いします。
+[制作者のTwitterはこちら](https://twitter.com/foolish_pine)
 <br>
 <br>
 
@@ -18,8 +19,8 @@
 <br>
 <br>
 
-## 制作に使用した言語・環境
-HTML / CSS / Sass / JavaScript(jQuery) / Photoshop
+## 制作に使用した言語・ツール
+HTML / CSS / Sass / JavaScript(jQuery) / Photoshop / Visual Studio Code
 <br>
 <br>
 
