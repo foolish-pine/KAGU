@@ -15,8 +15,8 @@
 </head>
 
 <body ontouchstart="">
-  <div class="l-header">
-    <header class="p-header">
+  <header class="l-header">
+    <div class="p-header">
       <div class="p-header__logo">
         <h1 class="p-header__logo--sp"><a href="#"><img src="image/img_logo_sp.png" alt="KAGUのロゴ"></a></h1>
         <h1 class="p-header__logo--pc"><a href="#"><img src="image/img_logo_pc.png" alt="KAGUのロゴ"></a></h1>
@@ -36,10 +36,9 @@
         <span class="p-header__menuLine"></span>
         <span class="p-header__menuLine"></span>
       </a>
-  </div>
+    </div>
   </header>
-  </div>
-  <div class="l-main">
+  <main class="l-main">
     <section class="p-mainVisual">
       <div class="p-mainVisual__catch">
         <p>自分らしさを<span></span>レイアウトする</p>
@@ -57,8 +56,8 @@
       <div class="p-news__wrapper">
         <h2 class="p-news__title c-sectionTitle">お知らせ<br></h2>
         <div class="p-news__articleContainer">
-          <a href="#">
-            <div class="p-news__article">
+          <div class="p-news__article">
+            <a href="#">
               <div class="p-news__articleDate">
                 <time datetime="2020-01-28">2020.01.28</time>
                 <p>ニュースリリース</p>
@@ -66,10 +65,10 @@
               <p class="p-news__articleHeadline">
                 「KAGU FANTASIA」が2020年X月XX日（月）東京・原宿にオープン
               </p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="p-news__article">
+            </a>
+          </div>
+          <div class="p-news__article">
+            <a href="#">
               <div class="p-news__articleDate">
                 <time datetime="2020-01-12">2020.01.12</time>
                 <p>ニュースリリース</p>
@@ -77,10 +76,10 @@
               <p class="p-news__articleHeadline">
                 新春キャンペーンを実施
               </p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="p-news__article">
+            </a>
+          </div>
+          <div class="p-news__article">
+            <a href="#">
               <div class="p-news__articleDate">
                 <time datetime="2019-12-26">2019.12.26</time>
                 <p>お知らせ</p>
@@ -88,10 +87,10 @@
               <p class="p-news__articleHeadline">
                 年末年始の営業日についてのお知らせ
               </p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="p-news__article">
+            </a>
+          </div>
+          <div class="p-news__article">
+            <a href="#">
               <div class="p-news__articleDate">
                 <time datetime="2019-11-09">2019.11.09</time>
                 <p>ニュースリリース</p>
@@ -99,8 +98,8 @@
               <p class="p-news__articleHeadline">
                 人気ライフスタイル雑誌『KAGUGU』とのコラボ商品が登場
               </p>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div class="p-news__button c-button">
           <a href="#">お知らせ一覧へ</a>
@@ -207,6 +206,8 @@
         </div>
       </div>
     </section>
+  </main>
+  <footer class="l-footer">
     <section id="recruit" class="p-recruit">
       <div class="p-recruit__wrapper">
         <h2 class="p-recruit__title c-sectionTitle">採用情報<br></h2>
@@ -220,13 +221,11 @@
         </div>
       </div>
     </section>
-  </div>
-  <div class="l-footer">
     <div class="p-footer__pagetop js-pagetop">
       <a href="#">PAGE TOP</a>
     </div>
-    <footer class="p-footer">
-      <div class="p-footer__logo-address-tel-nav">
+    <div class="p-footer">
+      <div class="p-footer__wrapper">
         <div class="p-footer__logo-address-tel">
           <div class="p-footer__logo">
             <h1><a href="#"><img src="image/img_logo_footer.png" alt="KAGUのロゴ"></a></h1>
@@ -258,7 +257,7 @@
               </a>
             </li>
           </ul>
-          <ul class="p-footer__list p-footer__list--right">
+          <ul class="p-footer__list p-footer__list--second">
             <li class="p-footer__item"><a href="#">販売店・展示場一覧</a></li>
             <li class="p-footer__item"><a href="#">採用情報</a></li>
             <li class="p-footer__item"><a href="#">お知らせ</a></li>
@@ -274,11 +273,13 @@
           <p>© 2020 KAGU inc.</p>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+  <script>objectFitImages();</script>
 </body>
 
 </html>
