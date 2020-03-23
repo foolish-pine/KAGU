@@ -119,6 +119,7 @@
 	}
 
 	&__threeColumnsContent {
+		width: 100%;
 		margin-bottom: 60px;
 
 		@include mq(tab) {
