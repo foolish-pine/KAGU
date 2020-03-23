@@ -5,11 +5,11 @@
 .p-furniture {
 	max-width: 1500px;
 	margin: 0 auto;
-	margin-top: -60px; //ナビゲーションからのリンク位置調整
+	margin-top: -60px; //ナビゲーションからのリンク位置調整 
 	padding-top: 60px; //ナビゲーションからのリンク位置調整
 
 	@include mq(pc-md) {
-		margin-top: -80px; //ナビゲーションからのリンク位置調整
+		margin-top: -80px; //ナビゲーションからのリンク位置調整 
 		padding-top: 80px; //ナビゲーションからのリンク位置調整
 	}
 
@@ -21,16 +21,17 @@
 
 		@include mq(pc-md) {
 			margin: 0 auto;
-			padding: 81px 0 100px;
+			padding: 81px 0 50px;
 		}
-;
+
+		;
 	}
 
 	&__title {
 		margin-bottom: 58px;
 
 		@include mq(pc-md) {
-			margin-bottom: 45px;
+			margin-bottom: 44px;
 		}
 
 		&::after {
@@ -39,15 +40,6 @@
 	}
 
 	&__twoColumns {
-		display: grid;
-		gap: 60px;
-		padding-bottom: 60px;
-
-		@include mq(tab) {
-			gap: 78px;
-			padding-bottom: 80px;
-		}
-
 		:nth-of-type(2) {
 			p {
 				margin-bottom: 23px;
@@ -56,15 +48,19 @@
 	}
 
 	&__twoColumnsContent {
+		margin-bottom: 60px;
+
 		@include mq(tab) {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin-bottom: 78px;
 		}
 
 		&:nth-child(even) {
 			@include mq(tab) {
 				flex-direction: row-reverse;
+				margin-bottom: 81px;
 			}
 		}
 
@@ -117,20 +113,31 @@
 	}
 
 	&__threeColumns {
-		display: grid;
-		gap: 60px;
-
-		@include mq(tab) {
-			grid-template-columns: 1fr 1fr;
-		}
-
-		@include mq(pc-md) {
-			grid-template-columns: 1fr 1fr 1fr;
-			gap: 70px;
-		}
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&__threeColumnsContent {
+		margin-bottom: 60px;
+
+		@include mq(tab) {
+			width: 46%;
+			&:first-child {
+				@include mq(tab) {
+					margin-bottom: 50px;
+				}
+			}
+		}
+
+		@include mq(pc-md) {
+			width: 29.7%;
+		}
+
+		&:last-child {
+			margin-bottom: 0 ;
+		}
+
 		img {
 			margin-bottom: 18px;
 
