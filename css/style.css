@@ -818,15 +818,8 @@ img {
      object-position: 75% 100%;
   width: 100%;
   height: 100%;
-}
-
-@media all and (-ms-high-contrast: none) {
-  .p-mainVisual__slide img {
-    -o-object-fit: unset;
-       object-fit: unset;
-    -o-object-position: unset;
-       object-position: unset;
-  }
+  /* IE対策 */
+  font-family: 'object-fit: cover; object-position: 75% 100%;';
 }
 
 .p-mainVisual__slideshowIndicator {
