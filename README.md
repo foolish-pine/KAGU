@@ -6,7 +6,7 @@
 **なお、制作者が担当した部分はコーディングのみです。<br>
 デザインは作成しておりません。**
 
-ご質問等は制作者のTwitterへお願いします。
+ご質問等は制作者のTwitterへお願いします。<br>
 [制作者のTwitterはこちら](https://twitter.com/foolish_pine)
 <br>
 <br>
