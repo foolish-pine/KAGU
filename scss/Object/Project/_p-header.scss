@@ -50,10 +50,9 @@
 
   &__nav {
     position: absolute;
-    background: rgba(41,41,41,.9);
+    background: $bg-color-header;
     display: none;
-    margin-top: 60px;
-    z-index: 100;
+    z-index: 101;
     text-align: center;
     
     @include mq(pc-lg) {
@@ -68,17 +67,21 @@
 
   &__list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 
     @include mq(pc-lg) {
       height: auto;
+      flex-direction: row;
+      justify-content: none;
       overflow: hidden;
       position: absolute;
       z-index: 100;
       right: 0;
-      display: flex;
     }
 
 
@@ -101,30 +104,25 @@
     }
 
     a {
-      color: #fff;
-      display: block;
+      color: $color-text;
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: bold;
       line-height: 80px;
       letter-spacing: .05em;
-      border-bottom: 1px solid #fff;
       transition: all .4s;
+      padding-bottom: 3px;
+      border-bottom: 2px solid $bg-color-header;
       
       @include mq(pc-lg) {
         color: $color-text;
-        display: inline;
-        padding-bottom: 3px;
         transition: all .4s;
         border-bottom: 2px solid $bg-color-header;
       }
 
       &:hover {
-        
-        @include mq(pc-lg) {
-          border-bottom: 2px solid $color-header-item-hover;
-          transition: all .4s;
-        }
+        border-bottom: 2px solid $color-header-item-hover;
+        transition: all .4s;
       }
     }
   }
@@ -135,7 +133,7 @@
     right: 20px;
     top: 22px;
     width: 24px;
-    z-index: 100;
+    z-index: 101;
 
     &:hover {
       cursor: pointer;

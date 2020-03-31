@@ -474,10 +474,9 @@ img {
 
 .p-header__nav {
   position: absolute;
-  background: rgba(41, 41, 41, 0.9);
+  background: #fcfcfc;
   display: none;
-  margin-top: 60px;
-  z-index: 100;
+  z-index: 101;
   text-align: center;
 }
 
@@ -494,6 +493,16 @@ img {
 
 .p-header__list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -502,13 +511,17 @@ img {
 @media print, screen and (min-width: 1024px) {
   .p-header__list {
     height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
     overflow: hidden;
     position: absolute;
     z-index: 100;
     right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -535,35 +548,31 @@ img {
 }
 
 .p-header__item a {
-  color: #fff;
-  display: block;
+  color: #333;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 80px;
   letter-spacing: .05em;
-  border-bottom: 1px solid #fff;
   -webkit-transition: all .4s;
   transition: all .4s;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #fcfcfc;
 }
 
 @media print, screen and (min-width: 1024px) {
   .p-header__item a {
     color: #333;
-    display: inline;
-    padding-bottom: 3px;
     -webkit-transition: all .4s;
     transition: all .4s;
     border-bottom: 2px solid #fcfcfc;
   }
 }
 
-@media print, screen and (min-width: 1024px) {
-  .p-header__item a:hover {
-    border-bottom: 2px solid #333;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-  }
+.p-header__item a:hover {
+  border-bottom: 2px solid #333;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .p-header__menu {
@@ -572,7 +581,7 @@ img {
   right: 20px;
   top: 22px;
   width: 24px;
-  z-index: 100;
+  z-index: 101;
 }
 
 .p-header__menu:hover {
