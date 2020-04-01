@@ -205,13 +205,16 @@
       display: block;
       text-decoration: none;
       letter-spacing: .05em;
-      color: #fff;
+      color: $color-text;
       transition: all .4s;
       border-bottom: 1px solid #fff;
+      font-weight: bold;
       
       @include mq(pc-lg) {
         padding-left: 30px;
         border-bottom: none;
+        color: #fff;
+        font-weight: normal;
       }
     }
   }
@@ -234,17 +237,20 @@
 
     a {
       font-size: 1.5rem;
+      font-weight: bold;
       line-height: 80px;
       display: block;
       padding-bottom: 0;
       text-decoration: none;
       letter-spacing: .05em;
-      color: #fff;
+      color: $color-text;
       border-bottom: 1px solid #fff;
       
       @include mq(pc-lg) {
         padding-left: 35px;
         border-bottom: none;
+        font-weight: normal;
+        color: #fff;
       }
     }
   }  

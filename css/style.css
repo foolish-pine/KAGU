@@ -663,16 +663,19 @@ img {
   display: block;
   text-decoration: none;
   letter-spacing: .05em;
-  color: #fff;
+  color: #333;
   -webkit-transition: all .4s;
   transition: all .4s;
   border-bottom: 1px solid #fff;
+  font-weight: bold;
 }
 
 @media print, screen and (min-width: 1024px) {
   .p-header__onlineStore a {
     padding-left: 30px;
     border-bottom: none;
+    color: #fff;
+    font-weight: normal;
   }
 }
 
@@ -699,12 +702,13 @@ img {
 
 .p-header__contact a {
   font-size: 1.5rem;
+  font-weight: bold;
   line-height: 80px;
   display: block;
   padding-bottom: 0;
   text-decoration: none;
   letter-spacing: .05em;
-  color: #fff;
+  color: #333;
   border-bottom: 1px solid #fff;
 }
 
@@ -712,6 +716,8 @@ img {
   .p-header__contact a {
     padding-left: 35px;
     border-bottom: none;
+    font-weight: normal;
+    color: #fff;
   }
 }
 
