@@ -20,17 +20,9 @@
 <br>
 
 ## 制作に使用した言語・ツール
-HTML / CSS / Sass / JavaScript(jQuery) / Photoshop / Visual Studio Code
+HTML / CSS / Sass / JavaScript(jQuery) / gulp / Photoshop / Visual Studio Code
 <br>
 <br>
 
 ## スクリーンショット
-<br>
-<br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU.png?raw=true" width=500px>
-<br>
-<br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_tab.png?raw=true" width=500px>
-<br>
-<br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/image/KAGU_sp.png?raw=true" width=500px>
+<img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_tab.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_sp.png?raw=true" height=700px>
