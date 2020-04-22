@@ -27,10 +27,4 @@ HTML / CSS / Sass / JavaScript(jQuery) / gulp / Photoshop / Visual Studio Code
 ## スクリーンショット
 <br>
 <br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU.png?raw=true" width=500px>
-<br>
-<br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_tab.png?raw=true" width=500px>
-<br>
-<br>
-<img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_sp.png?raw=true" width=500px>
+<img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_tab.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_sp.png?raw=true" height=700px>
