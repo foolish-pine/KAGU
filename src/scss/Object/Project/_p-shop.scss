@@ -1,0 +1,87 @@
+/* ================================================================
+  販売店・オンラインストア
+   ================================================================ */
+
+.p-shop {
+  margin: auto;
+
+  &__wrapper {
+    padding: 40px 0 43px;
+    margin: auto;
+    background: $color-shop-bg;
+
+    @include mq(pc-md) {
+      padding: 80px 0 96px;
+    }
+  }
+
+  &__container {
+    width: calc((335 / 375) * 100%);
+    max-width: 1280px;
+    margin: auto;
+    margin-bottom: 55px;
+
+    @include mq(tab) {
+      display: flex;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-container {
+    @include mq(tab) {
+      width: calc((829 / 1280) * 100%);
+      margin-left: 70px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 24px;
+
+    @include mq(tab) {
+      max-width: 380px;
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    margin-bottom: 21px;
+    font-size: 2rem;
+    font-weight: medium;
+    line-height: 1;
+    color: $color-text;
+    letter-spacing: 0.05em;
+
+    @include mq(pc-md) {
+      margin-bottom: 21px;
+    }
+  }
+
+  p {
+    margin-bottom: 26px;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: $color-text;
+    letter-spacing: 0.05em;
+
+    @include mq(pc-md) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-text;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+
+    &::after {
+      margin-left: 10px;
+      content: url(../img/img_arrow_black.png);
+    }
+  }
+}

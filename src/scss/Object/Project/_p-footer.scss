@@ -1,0 +1,289 @@
+/* ================================================================
+  フッター
+   ================================================================ */
+
+.p-footer {
+  width: 100%;
+  padding: 31px 0;
+  margin: auto;
+  background: $color-footer-bg;
+
+  @include mq(pc-md) {
+    padding: 60px 110px 40px;
+  }
+
+  &__wrapper {
+    @include mq(pc-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__pagetop {
+    position: relative;
+    display: none;
+    height: 0;
+    margin: auto;
+
+    @include mq(pc-md) {
+      display: block;
+    }
+
+    a {
+      position: absolute;
+      top: -30px;
+      right: 110px;
+      display: block;
+      width: 120px;
+      height: 30px;
+      font-weight: normal;
+      line-height: 30px;
+      color: $color-footer-text;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      background: $color-footer-bg;
+    }
+  }
+
+  &__logo-address-tel {
+    padding-bottom: 26px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+
+    @include mq(pc-md) {
+      text-align: left;
+      border: none;
+    }
+  }
+
+  &__logo {
+    width: 110px;
+    margin: 0 auto 14px;
+
+    @include mq(pc-md) {
+      width: 146px;
+      height: 23px;
+      margin: 0 0 28px;
+    }
+
+    a {
+      display: block;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__address {
+    margin-bottom: 19px;
+
+    @include mq(pc-md) {
+      margin-bottom: 19px;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.71;
+      color: $color-footer-text;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__tel {
+    p {
+      font-size: 2.4rem;
+      font-weight: medium;
+      color: $color-footer-text;
+      letter-spacing: 0.05em;
+
+      a {
+        //iPhoneで電話番号が自動でリンクになるのを無効にする
+        color: $color-footer-text;
+        text-decoration: none;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__nav {
+    @include mq(pc-md) {
+      margin-top: 2px;
+    }
+
+    @include mq(pc-md) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    @include mq(pc-md) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    padding-left: 20px;
+    line-height: 52px;
+    color: $color-footer-text;
+    background: url(img/img_arrow_white.png) top 24px right 20px;
+    border-bottom: 1px solid $color-footer-border;
+
+    @include mq(pc-md) {
+      padding: 0;
+      margin-bottom: 26px;
+      line-height: 1;
+      background: none;
+      border: none;
+    }
+
+    a {
+      display: block;
+      font-size: 1.4rem;
+      color: $color-footer-text;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__sub-nav {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    color: $color-footer-text;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    background: none;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 18px;
+    right: 21px;
+    z-index: 10;
+    width: 17px;
+    height: 17px;
+
+    @include mq(pc-md) {
+      display: none;
+    }
+  }
+
+  &__menu-line {
+    position: absolute;
+    display: block;
+    background: $color-footer-text;
+    transition: transform 0.3s;
+
+    @include mq(pc-md) {
+      display: none;
+    }
+
+    &:first-child {
+      top: 8px;
+      width: 17px;
+      height: 1px;
+    }
+
+    &:nth-child(2) {
+      left: 8px;
+      width: 1px;
+      height: 17px;
+
+      &.active {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__sub-list {
+    display: none;
+    padding: 2px 0 11px;
+    list-style: none;
+
+    @include mq(pc-md) {
+      display: block;
+      padding-top: 8px;
+    }
+  }
+
+  &__sub-item {
+    line-height: 33px;
+
+    @include mq(pc-md) {
+      padding-left: 10px;
+      margin-bottom: 17px;
+      line-height: 1;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+
+    a {
+      font-size: 1.3rem;
+      color: $color-footer-text;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__list--second {
+    .p-footer__item {
+      padding-left: 28px;
+      line-height: 54px;
+
+      @include mq(pc-md) {
+        padding-left: 92px;
+        line-height: 1;
+      }
+    }
+  }
+
+  &__privacypolicy-copyright {
+    width: 100%;
+    padding: 15px 0 33px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include mq(pc-md) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 0;
+      margin: -34px auto;
+      text-align: left;
+    }
+  }
+
+  &__privacypolicy {
+    margin-bottom: 24px;
+
+    @include mq(pc-md) {
+      display: flex;
+    }
+
+    a {
+      display: block;
+      font-size: 1.2rem;
+      color: $color-footer-text;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__copyright {
+    p {
+      font-size: 1.2rem;
+      color: $color-footer-text;
+      letter-spacing: 0.05em;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+/* ================================================================
+  メインヴィジュアル
+   ================================================================ */
+
+.p-main-visual {
+  position: relative;
+  height: 360px;
+  margin: auto;
+
+  @include mq(tab) {
+    height: 610px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 360px;
+    content: "";
+    background: rgba(140, 118, 101, 0.2);
+
+    @include mq(tab) {
+      height: 610px;
+    }
+  }
+
+  &__catch {
+    position: absolute;
+    top: 92px;
+    left: 25px;
+    z-index: 11;
+
+    @include mq(tab) {
+      top: 234px;
+      left: 105px;
+    }
+
+    p {
+      font-size: 2.4rem;
+      font-weight: medium;
+      color: #fff;
+      letter-spacing: 0.2em;
+
+      span {
+        &::before {
+          white-space: pre;
+          content: "\A";
+        }
+
+        @include mq(pc-lg) {
+          &::before {
+            content: "";
+          }
+        }
+      }
+
+      @include mq(tab) {
+        font-size: 3.5rem;
+        letter-spacing: 0.24em;
+      }
+    }
+  }
+
+  &__slideshow {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    background: #8c7665;
+
+    @include mq(tab) {
+      height: 610px;
+    }
+  }
+
+  &__slideshow-slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      margin-left: -50%;
+
+      /* IE対策 */
+      font-family: "object-fit: cover; object-position: 75% 100%;";
+      object-fit: cover;
+      object-position: 75% 100%;
+    }
+  }
+
+  &__slideshow-indicator {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    z-index: 11;
+    height: 20px;
+    text-align: center;
+
+    @include mq(tab) {
+      bottom: 100px;
+    }
+
+    a {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+
+      &::before {
+        content: url(../img/img_bullet_white.png);
+        background: 10px 10px;
+      }
+
+      &.active {
+        cursor: default;
+
+        &::before {
+          content: url(../img/img_bullet_blue.png);
+        }
+      }
+    }
+  }
+}

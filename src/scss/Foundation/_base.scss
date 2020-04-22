@@ -1,0 +1,25 @@
+/* ================================================================
+  ベース
+   ================================================================ */
+
+html {
+  font-size: 62.5%; // ルートのフォントサイズ = 10px
+}
+
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Quicksand:wght@400;500;700&display=swap"); // Google Fonts
+
+  display: flex; // フッター固定用
+  flex-direction: column; // フッター固定用
+  min-height: 100vh; // フッター固定用
+  font-family: "Quicksand", "Noto Sans JP", sans-serif;
+  font-size: 1.6rem; // ルートのフォントサイズ = 1.6em (16px)
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}

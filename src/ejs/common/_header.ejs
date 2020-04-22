@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAGU</title>
+  <meta name="description" content="名古屋市の家具販売会社「KAGU」の公式Webサイトです。あなたのお部屋のテーマやカラー、レイアウトにぴったりの家具を多数取り揃えております。">
+  <!-- 検索結果から除外する -->
+  <meta name="robots" content="none">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= path %>/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" href="<%= path %>/img/favicon/favicon.ico" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="<%= path %>/css/style.css" />
+</head>
+
+<body>
+  <!-- ヘッダーここから -->
+  <header class="l-header">
+    <div class="p-header">
+      <div class="p-header__logo">
+        <h1>
+          <a href="<%= path %>/index.html">
+            <img src="<%= path %>/img/img_logo.png" alt="KAGU">
+          </a>
+        </h1>
+      </div>
+      <nav class="p-header__nav">
+        <ul class="p-header__list">
+          <li class="p-header__item"><a class="js-smoothscroll" href="#furniture">取扱い家具</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#shop">販売店・展示場一覧</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#recruit">採用情報</a></li>
+          <li class="p-header__item"><a class="js-smoothscroll" href="#news">お知らせ</a></li>
+          <li class="p-header__online-store"><a class="js-smoothscroll" href="#">ONLINE STORE</a></li>
+          <li class="p-header__contact"><a class="js-smoothscroll" href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="p-header__menu js-hamburger-menu">
+        <span class="p-header__menu-line js-hamburger-menu-line"></span>
+        <span class="p-header__menu-line js-hamburger-menu-line"></span>
+        <span class="p-header__menu-line js-hamburger-menu-line"></span>
+      </button>
+    </div>
+  </header>
+  <!-- ヘッダーここまで -->

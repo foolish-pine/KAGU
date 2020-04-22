@@ -1,0 +1,157 @@
+/* ================================================================
+  取り扱い家具
+   ================================================================ */
+
+.p-furniture {
+  margin: 0 auto;
+
+  &__wrapper {
+    width: calc((335 / 375) * 100%);
+    max-width: 1280px;
+    padding: 35px 0 40px;
+    margin: auto;
+
+    @include mq(pc-md) {
+      padding: 81px 0 50px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 58px;
+
+    @include mq(pc-md) {
+      margin-bottom: 44px;
+    }
+
+    &::after {
+      content: "FURNITURE";
+    }
+  }
+
+  &__two-columns-content {
+    margin-bottom: 60px;
+
+    @include mq(tab) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 78px;
+    }
+
+    &:nth-child(even) {
+      @include mq(tab) {
+        flex-direction: row-reverse;
+        margin-bottom: 81px;
+      }
+    }
+
+    img {
+      margin-bottom: 18px;
+
+      @include mq(tab) {
+        width: calc((610 / 1280) * 100%);
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__two-columns-text {
+    @include mq(tab) {
+      width: calc((610 / 1280) * 100%);
+    }
+
+    h3 {
+      margin-bottom: 17px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color-text;
+      letter-spacing: 0.05em;
+
+      @include mq(pc-md) {
+        margin-bottom: 25px;
+        font-size: 2.4rem;
+      }
+    }
+
+    p {
+      margin-bottom: 52px;
+      font-size: 1.5rem;
+      line-height: 2;
+      letter-spacing: 0.06em;
+
+      @include mq(pc-md) {
+        margin-bottom: 54px;
+      }
+    }
+  }
+
+  &__two-columns-button {
+    margin: auto;
+
+    @include mq(tab) {
+      margin: 0;
+    }
+  }
+
+  &__three-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__three-columns-content {
+    width: 100%;
+    margin-bottom: 60px;
+
+    @include mq(tab) {
+      width: 46%;
+    }
+
+    &:first-child {
+      @include mq(tab) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @include mq(pc-md) {
+      width: 29.7%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-bottom: 18px;
+
+      @include mq(pc-md) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  &__three-columns-text {
+    h3 {
+      margin-bottom: 17px;
+      font-size: 2rem;
+      font-weight: medium;
+      color: $color-text;
+      letter-spacing: 0.05em;
+    }
+
+    p {
+      margin-bottom: 23px;
+      font-size: 1.5rem;
+      line-height: 2;
+      letter-spacing: 0.05em;
+
+      @include mq(pc-md) {
+        margin-bottom: 52px;
+      }
+    }
+  }
+
+  &__three-columns-button {
+    margin: auto;
+  }
+}

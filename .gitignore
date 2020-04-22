@@ -1,2 +1,2 @@
-inc/
-jpg/
+#node_modulesを除外する
+node_modules

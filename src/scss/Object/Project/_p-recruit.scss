@@ -1,0 +1,53 @@
+/* ================================================================
+  採用情報
+   ================================================================ */
+
+.p-recruit {
+  margin: auto;
+
+  &__wrapper {
+    padding: 39px 20px;
+    text-align: center;
+    background: url(../img/bg_recruit.jpg) center/cover;
+
+    @include mq(pc-md) {
+      height: 430px;
+      padding: 79px 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: #fff;
+
+    @include mq(pc-md) {
+      margin-bottom: 43px;
+    }
+
+    &::after {
+      color: #fff;
+      content: "RECRUIT";
+    }
+  }
+
+  &__text {
+    p {
+      margin-bottom: 21px;
+      font-size: 1.5rem;
+      font-weight: medium;
+      line-height: calc(32 / 15);
+      color: #fff;
+      letter-spacing: 0.2em;
+
+      @include mq(tab) {
+        margin-bottom: 54px;
+        font-size: 1.6rem;
+        line-height: 2;
+      }
+    }
+  }
+
+  &__button {
+    margin: auto;
+  }
+}

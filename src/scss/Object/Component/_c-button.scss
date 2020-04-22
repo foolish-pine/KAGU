@@ -1,0 +1,66 @@
+/* ===================================================================
+  ボタンコンポーネント
+   =================================================================== */
+
+.c-button {
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid $color-button;
+
+  @include mq(pc-md) {
+    height: 53px;
+  }
+
+  a {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 46px;
+    color: $color-button;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    transition: all 0.4s;
+
+    @include mq(pc-md) {
+      font-size: 1.5rem;
+      line-height: 49px;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-button;
+        transition: all 0.4s;
+      }
+    }
+  }
+}
+
+.c-button--clear {
+  @extend .c-button;
+
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+
+  @include mq(pc-md) {
+    height: 53px;
+  }
+
+  a {
+    line-height: 41px;
+    color: #fff;
+    transition: none;
+
+    @include mq(pc-md) {
+      font-size: 1.4rem;
+      line-height: 49px;
+
+      &:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0);
+        transition: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/* ================================================================
+  メディアクエリ
+   ================================================================ */
+
+$tab: 560px;
+$pc-md: 960px;
+$pc-lg: 1024px;
+
+$breakpoints: (
+  "tab": "print,screen and (min-width:560px)",
+  //ブラウザ幅560px以上で適用
+    "pc-md": "print,screen and (min-width:960px)",
+  //ブラウザ幅960px以上で適用
+    "pc-lg": "print,screen and (min-width:1024px)"
+    //ブラウザ幅1024px以上で適用,,,
+);
+
+@mixin mq($breakpoint: tab) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
