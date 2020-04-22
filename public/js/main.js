@@ -7,29 +7,29 @@ $(function () {
   // ハンバーガーメニュー
   // ---------------------------------------------
 
-  var mq = window.matchMedia("screen and (max-width:959px)");
+  var mq = window.matchMedia("screen and (max-width:1023px)");
 
   var $headerNav = $(".p-header__nav"),
     $hamburgerMenu = $(".js-hamburger-menu"),
     $hamburgerMenuLine = $(".js-hamburger-menu-line"),
     $footerSubNav = $(".p-footer__sub-nav"),
-    $crossMenu = $(".js-cross-menu"),
+    $footerSubList = $(".p-footer__sub-list"),
     $crossMenuLine = $(".js-cross-menu-line");
 
   $(window).on("resize", function () {
     if (mq.matches) {
-      // 画面幅959px以下のとき
+      // 画面幅1023px以下のとき
       // navを非表示にする
       $headerNav.hide();
-      $footerSubNav.hide();
+      $footerSubList.hide();
       // メニューアイコンを非activeにする
       $hamburgerMenuLine.removeClass("active");
       $crossMenuLine.removeClass("active");
     } else {
-      // 画面幅960px以上のとき
+      // 画面幅1024px以上のとき
       // navを表示させる
       $headerNav.show();
-      $footerSubNav.show();
+      $footerSubList.show();
     }
   });
 
@@ -39,9 +39,9 @@ $(function () {
     $headerNav.stop(true).fadeToggle();
   });
 
-  $crossMenu.on("click", function () {
+  $footerSubNav.on("click", function () {
     $crossMenuLine.stop(true).toggleClass("active");
-    $footerSubNav.stop(true).fadeToggle();
+    $footerSubList.stop(true).slideToggle();
   });
 
   // ナビの余白クリックでヘッダーメニュー閉じる

@@ -38,20 +38,18 @@
   レイアウト
 ================================================================ */
 
-@import "Layout/l-header", "Layout/l-main", "Layout/l-footer";
+@import "Layout/**";
 
 /* ===============================================================
   Component
   コンポーネント
 ================================================================ */
 
-@import "Object/Component/c-button", "Object/Component/c-text";
+@import "Object/Component/**";
 
 /* ===============================================================
   Project
   プロジェクト
 ================================================================ */
 
-@import "Object/Project/p-header", "Object/Project/p-main-visual",
-  "Object/Project/p-news", "Object/Project/p-furniture", "Object/Project/p-shop",
-  "Object/Project/p-recruit", "Object/Project/p-footer";
+@import "Object/Project/**";
