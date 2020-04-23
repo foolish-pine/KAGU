@@ -3,7 +3,7 @@
    ================================================================ */
 
 .p-furniture {
-  margin: 0 auto;
+  margin: auto;
 
   &__wrapper {
     width: calc((335 / 375) * 100%);
@@ -24,6 +24,7 @@
     }
 
     &::after {
+      display: block;
       content: "FURNITURE";
     }
   }
@@ -59,29 +60,26 @@
     @include mq(tab) {
       width: calc((610 / 1280) * 100%);
     }
+  }
 
-    h3 {
-      margin-bottom: 17px;
-      font-size: 2rem;
-      font-weight: bold;
-      color: $color-text;
-      letter-spacing: 0.05em;
+  &__two-columns-content-title {
+    margin-bottom: 17px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-text;
+    letter-spacing: 0.05em;
 
-      @include mq(pc-md) {
-        margin-bottom: 25px;
-        font-size: 2.4rem;
-      }
+    @include mq(pc-md) {
+      margin-bottom: 25px;
+      font-size: 2.4rem;
     }
+  }
 
-    p {
-      margin-bottom: 52px;
-      font-size: 1.5rem;
-      line-height: 2;
-      letter-spacing: 0.06em;
+  &__two-columns-content-text {
+    margin-bottom: 52px;
 
-      @include mq(pc-md) {
-        margin-bottom: 54px;
-      }
+    @include mq(pc-md) {
+      margin-bottom: 54px;
     }
   }
 
@@ -130,24 +128,19 @@
     }
   }
 
-  &__three-columns-text {
-    h3 {
-      margin-bottom: 17px;
-      font-size: 2rem;
-      font-weight: medium;
-      color: $color-text;
-      letter-spacing: 0.05em;
-    }
+  &__three-columns-content-title {
+    margin-bottom: 17px;
+    font-size: 2rem;
+    font-weight: medium;
+    color: $color-text;
+    letter-spacing: 0.05em;
+  }
 
-    p {
-      margin-bottom: 23px;
-      font-size: 1.5rem;
-      line-height: 2;
-      letter-spacing: 0.05em;
+  &__three-columns-content-text {
+    margin-bottom: 23px;
 
-      @include mq(pc-md) {
-        margin-bottom: 52px;
-      }
+    @include mq(pc-md) {
+      margin-bottom: 52px;
     }
   }
 

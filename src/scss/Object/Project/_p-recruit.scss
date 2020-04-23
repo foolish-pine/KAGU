@@ -25,25 +25,24 @@
     }
 
     &::after {
+      display: block;
       color: #fff;
       content: "RECRUIT";
     }
   }
 
   &__text {
-    p {
-      margin-bottom: 21px;
-      font-size: 1.5rem;
-      font-weight: medium;
-      line-height: calc(32 / 15);
-      color: #fff;
-      letter-spacing: 0.2em;
+    margin-bottom: 21px;
+    font-size: 1.5rem;
+    font-weight: medium;
+    line-height: calc(32 / 15);
+    color: #fff;
+    letter-spacing: 0.2em;
 
-      @include mq(tab) {
-        margin-bottom: 54px;
-        font-size: 1.6rem;
-        line-height: 2;
-      }
+    @include mq(tab) {
+      margin-bottom: 54px;
+      font-size: 1.6rem;
+      line-height: 2;
     }
   }
 

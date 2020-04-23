@@ -2,6 +2,13 @@
   テキストコンポーネント
    =================================================================== */
 
+.c-text {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: $color-text;
+  letter-spacing: 0.05em;
+}
+
 .c-section-title {
   font-size: 2rem;
   line-height: 1;

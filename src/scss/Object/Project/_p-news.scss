@@ -36,6 +36,7 @@
     }
 
     &::after {
+      display: block;
       content: "NEWS";
     }
   }
@@ -81,7 +82,7 @@
       letter-spacing: 0.05em;
     }
 
-    p {
+    span {
       display: inline-block;
       padding: 1px 8px;
       font-size: 1.1rem;

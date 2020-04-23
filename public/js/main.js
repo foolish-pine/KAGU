@@ -87,10 +87,22 @@ $(function () {
       interval = 7500,
       timer;
 
+      // スライドをもう一組追加する(無限ループ用)
+      $slides.clone().appendTo($slideGroup); 
+      $slides = $slideGroup.find(".p-main-visual__slide");
+      
     $slides.each(function (i) {
       $(this).css({ left: 100 * i + "%" });
+    });
+    
+    // スライドの数だけインジケーターを追加する
+    $slides.each(function (i) {
+      if (i === slideCount) {
+        return false;
+      }
       indicatorHTML += '<a href="#"></a>';
     });
+
 
     $indicator.html(indicatorHTML);
 
@@ -111,7 +123,17 @@ $(function () {
     function startTimer() {
       timer = setInterval(function () {
         var nextIndex = (currentIndex + 1) % slideCount;
-        goToSlide(nextIndex);
+
+        // 無限ループ
+        if (nextIndex === 0) {
+          $slideGroup.animate({ left: -100 * slideCount + "%" }, duration, function() {
+            $slideGroup.css({ 'left': '0%' });
+          });
+          currentIndex = 0;
+          updateNav();
+        } else {
+          goToSlide(nextIndex);
+        }
       }, interval);
     }
 
