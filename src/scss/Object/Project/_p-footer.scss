@@ -132,7 +132,7 @@
     padding-left: 20px;
     line-height: 52px;
     color: $color-footer-text;
-    background: url(img/img_arrow_white.png) top 24px right 20px;
+    background: url(../img/img_arrow_white.png) top 24px right 20px no-repeat;
     border-bottom: 1px solid $color-footer-border;
 
     @include mq(pc-md) {
@@ -251,7 +251,7 @@
   &__privacypolicy-copyright {
     width: 100%;
     padding: 15px 0 33px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
 
     @include mq(pc-md) {
@@ -281,10 +281,8 @@
   }
 
   &__copyright {
-    p {
-      font-size: 1.2rem;
-      color: $color-footer-text;
-      letter-spacing: 0.05em;
-    }
+    font-size: 1.2rem;
+    color: $color-footer-text;
+    letter-spacing: 0.05em;
   }
 }

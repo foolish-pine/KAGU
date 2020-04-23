@@ -39,9 +39,11 @@
     }
 
     p {
+      font-family: "Noto Serif JP", serif;
       font-size: 2.4rem;
       font-weight: medium;
       color: #fff;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       letter-spacing: 0.2em;
 
       span {

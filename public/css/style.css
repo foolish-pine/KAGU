@@ -17,7 +17,7 @@
  * MIT License
  * github.com/filipelinhares/ress
  */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Quicksand:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:ital,wght@0,400;0,700;1,700&family=Quicksand:wght@400;500;700&display=swap");
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -281,7 +281,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Quicksand", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Noto Serif JP", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -353,26 +353,23 @@ button:focus {
 /* ===================================================================
   ボタンコンポーネント
    =================================================================== */
-.c-button, .c-button--clear {
+.c-button, .c-button--default, .c-button--clear {
   width: 220px;
   height: 50px;
   text-align: center;
-  background-color: #fff;
-  border: 2px solid #333;
 }
 
 @media print, screen and (min-width: 960px) {
-  .c-button, .c-button--clear {
+  .c-button, .c-button--default, .c-button--clear {
     height: 53px;
   }
 }
 
-.c-button a, .c-button--clear a {
+.c-button a, .c-button--default a, .c-button--clear a {
   display: block;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 46px;
-  color: #333;
   text-decoration: none;
   letter-spacing: 0.1em;
   -webkit-transition: all 0.4s;
@@ -380,11 +377,23 @@ button:focus {
 }
 
 @media print, screen and (min-width: 960px) {
-  .c-button a, .c-button--clear a {
+  .c-button a, .c-button--default a, .c-button--clear a {
     font-size: 1.5rem;
     line-height: 49px;
   }
-  .c-button a:hover, .c-button--clear a:hover {
+}
+
+.c-button--default {
+  background-color: #fff;
+  border: 2px solid #333;
+}
+
+.c-button--default a {
+  color: #333;
+}
+
+@media print, screen and (min-width: 1024px) {
+  .c-button--default a:hover {
     color: #fff;
     background-color: #333;
     -webkit-transition: all 0.4s;
@@ -407,8 +416,6 @@ button:focus {
 .c-button--clear a {
   line-height: 41px;
   color: #fff;
-  -webkit-transition: none;
-  transition: none;
 }
 
 @media print, screen and (min-width: 960px) {
@@ -416,17 +423,18 @@ button:focus {
     font-size: 1.4rem;
     line-height: 49px;
   }
-  .c-button--clear a:hover {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0);
-    -webkit-transition: none;
-    transition: none;
-  }
 }
 
 /* ===================================================================
   テキストコンポーネント
    =================================================================== */
+.c-text {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #333;
+  letter-spacing: 0.05em;
+}
+
 .c-section-title {
   font-size: 2rem;
   line-height: 1;
@@ -614,7 +622,7 @@ button:focus {
   padding-left: 20px;
   line-height: 52px;
   color: #fff;
-  background: url(img/img_arrow_white.png) top 24px right 20px;
+  background: url(../img/img_arrow_white.png) top 24px right 20px no-repeat;
   border-bottom: 1px solid #555;
 }
 
@@ -746,7 +754,7 @@ button:focus {
 .p-footer__privacypolicy-copyright {
   width: 100%;
   padding: 15px 0 33px;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
 }
 
@@ -788,7 +796,7 @@ button:focus {
   letter-spacing: 0.05em;
 }
 
-.p-footer__copyright p {
+.p-footer__copyright {
   font-size: 1.2rem;
   color: #fff;
   letter-spacing: 0.05em;
@@ -798,7 +806,7 @@ button:focus {
   取り扱い家具
    ================================================================ */
 .p-furniture {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .p-furniture__wrapper {
@@ -825,6 +833,7 @@ button:focus {
 }
 
 .p-furniture__title::after {
+  display: block;
   content: "FURNITURE";
 }
 
@@ -874,7 +883,7 @@ button:focus {
   }
 }
 
-.p-furniture__two-columns-text h3 {
+.p-furniture__two-columns-content-title {
   margin-bottom: 17px;
   font-size: 2rem;
   font-weight: bold;
@@ -883,21 +892,18 @@ button:focus {
 }
 
 @media print, screen and (min-width: 960px) {
-  .p-furniture__two-columns-text h3 {
+  .p-furniture__two-columns-content-title {
     margin-bottom: 25px;
     font-size: 2.4rem;
   }
 }
 
-.p-furniture__two-columns-text p {
+.p-furniture__two-columns-content-text {
   margin-bottom: 52px;
-  font-size: 1.5rem;
-  line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 @media print, screen and (min-width: 960px) {
-  .p-furniture__two-columns-text p {
+  .p-furniture__two-columns-content-text {
     margin-bottom: 54px;
   }
 }
@@ -960,7 +966,7 @@ button:focus {
   }
 }
 
-.p-furniture__three-columns-text h3 {
+.p-furniture__three-columns-content-title {
   margin-bottom: 17px;
   font-size: 2rem;
   font-weight: medium;
@@ -968,15 +974,12 @@ button:focus {
   letter-spacing: 0.05em;
 }
 
-.p-furniture__three-columns-text p {
+.p-furniture__three-columns-content-text {
   margin-bottom: 23px;
-  font-size: 1.5rem;
-  line-height: 2;
-  letter-spacing: 0.05em;
 }
 
 @media print, screen and (min-width: 960px) {
-  .p-furniture__three-columns-text p {
+  .p-furniture__three-columns-content-text {
     margin-bottom: 52px;
   }
 }
@@ -1315,9 +1318,11 @@ button:focus {
 }
 
 .p-main-visual__catch p {
+  font-family: "Noto Serif JP", serif;
   font-size: 2.4rem;
   font-weight: medium;
   color: #fff;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.2em;
 }
 
@@ -1460,6 +1465,7 @@ button:focus {
 }
 
 .p-news__title::after {
+  display: block;
   content: "NEWS";
 }
 
@@ -1516,7 +1522,7 @@ button:focus {
   letter-spacing: 0.05em;
 }
 
-.p-news__article-date p {
+.p-news__article-date span {
   display: inline-block;
   padding: 1px 8px;
   font-size: 1.1rem;
@@ -1570,11 +1576,12 @@ button:focus {
 }
 
 .p-recruit__title::after {
+  display: block;
   color: #fff;
   content: "RECRUIT";
 }
 
-.p-recruit__text p {
+.p-recruit__text {
   margin-bottom: 21px;
   font-size: 1.5rem;
   font-weight: medium;
@@ -1584,7 +1591,7 @@ button:focus {
 }
 
 @media print, screen and (min-width: 560px) {
-  .p-recruit__text p {
+  .p-recruit__text {
     margin-bottom: 54px;
     font-size: 1.6rem;
     line-height: 2;
@@ -1652,7 +1659,7 @@ button:focus {
   }
 }
 
-.p-shop h3 {
+.p-shop__content-title {
   margin-bottom: 21px;
   font-size: 2rem;
   font-weight: medium;
@@ -1662,21 +1669,17 @@ button:focus {
 }
 
 @media print, screen and (min-width: 960px) {
-  .p-shop h3 {
+  .p-shop__content-title {
     margin-bottom: 21px;
   }
 }
 
-.p-shop p {
+.p-shop__content-text {
   margin-bottom: 26px;
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #333;
-  letter-spacing: 0.05em;
 }
 
 @media print, screen and (min-width: 960px) {
-  .p-shop p {
+  .p-shop__content-text {
     margin-bottom: 45px;
   }
 }

@@ -47,7 +47,7 @@
     }
   }
 
-  h3 {
+  &__content-title {
     margin-bottom: 21px;
     font-size: 2rem;
     font-weight: medium;
@@ -60,12 +60,8 @@
     }
   }
 
-  p {
+  &__content-text {
     margin-bottom: 26px;
-    font-size: 1.5rem;
-    line-height: 2;
-    color: $color-text;
-    letter-spacing: 0.05em;
 
     @include mq(pc-md) {
       margin-bottom: 45px;
