@@ -1,4 +1,4 @@
-# 架空サイト「KAGU」
+# 架空の家具販売会社Webサイト
 
 ## KAGUについて
 このサイトは架空の家具販売会社「KAGU」を題材としたものです。<br>
@@ -20,9 +20,16 @@
 <br>
 
 ## 制作に使用した言語・ツール
-HTML / CSS / Sass / JavaScript(jQuery) / gulp / Photoshop / Visual Studio Code
+HTML / CSS / Sass / JavaScript(jQuery) / Gulp / Photoshop
 <br>
 <br>
+
+## ポイント
+- Photoshopのデザインカンプをもとにコーディングした、ランディングページです。
+- レスポンシブ対応あり(PC、SP)。
+- スティッキーヘッダー、スライドショー、ハンバーガーメニューをjQueryで実装しました。
+<br>
+
 
 ## スクリーンショット
 <img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_tab.png?raw=true" height=700px> <img src="https://github.com/foolish-pine/KAGU/blob/master/src/img/KAGU_sp.png?raw=true" height=700px>
