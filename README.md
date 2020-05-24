@@ -26,7 +26,7 @@ HTML / CSS / Sass / JavaScript(jQuery) / Gulp / Photoshop
 
 ## ポイント
 - Photoshopのデザインカンプをもとにコーディングした、ランディングページです。
-- レスポンシブ対応あり(PC、SP)。
+- レスポンシブ対応あり(PC、タブレット、SP)。
 - スティッキーヘッダー、スライドショー、ハンバーガーメニューをjQueryで実装しました。
 <br>
 
